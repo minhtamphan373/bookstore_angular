@@ -1,0 +1,26 @@
+.mat-toolbar{
+    height: fit-content;
+    position: fixed;
+}
+.mat-accordion .custom-panel {
+    background-color: var(--primary-background);
+    box-shadow: none;
+    /* border-color: var(--primary-background); */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+ }
+ .panel-title{
+    color: white;
+ }
+.mat-mdc-form-field + .mat-mdc-form-field {
+     margin-left: 8px;
+} 
+
+ .example-spacer {
+     flex: 1 1 auto;
+ }
+ .example-button-row {
+     display: table-cell;
+     max-width: fit-content;
+     max-height: 100px;
+     color: white;
+}

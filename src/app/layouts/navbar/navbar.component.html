@@ -1,1 +1,45 @@
-<p>navbar works!</p>
+<mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>BOOKWORM</span>
+    <button mat-flat-button color="primary" routerLink="">TRANG CHỦ</button>
+    <button mat-flat-button color="primary" routerLink="./pages/about/about.component.html">GIỚI THIỆU</button>
+    <button mat-flat-button color="primary" routerLink="./pages/contact/contact.component.html">LIÊN HỆ</button>
+    <mat-accordion>
+        <mat-expansion-panel hideToggle>                  
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false" class="custom-panel">
+          <mat-expansion-panel-header>
+            <mat-panel-title class="panel-title">
+                <a mat-button href="">THƯ VIỆN</a>
+            </mat-panel-title>            
+          </mat-expansion-panel-header>         
+          <section>
+            <div class="example-button-row">
+              <a mat-button href="">VĂN HỌC</a>
+              <a mat-button href="">TRINH THÁM</a>
+              <a mat-button href="">TÂM LINH</a>          
+            </div>
+          </section>
+        </mat-expansion-panel>
+      </mat-accordion>
+      
+    
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon">
+        <mat-icon>search</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon favorite-icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-flat-button color="primary" routerLink="">ĐĂNG NHẬP</button>
+    <button mat-flat-button color="primary" routerLink="">ĐĂNG KÝ</button>
+    <button mat-icon-button class="example-icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  
+  </mat-toolbar> 
+  
+  
