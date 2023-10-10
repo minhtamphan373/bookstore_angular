@@ -12,7 +12,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatExpansionModule} from '@angular/material/expansion';
-
+import {MatCardModule} from '@angular/material/card';
+import { ImageSliderModule } from './layouts/imageSlider/imageSlider.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    LibraryComponent
+    LibraryComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,6 +31,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatIconModule,
     MatButtonModule,
     MatExpansionModule,
+    MatCardModule,
+    ImageSliderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,9 @@
 .mat-toolbar{
+    display: flex;
+    top: 0;
     height: fit-content;
     position: fixed;
+    z-index: 9999;
 }
 .mat-accordion .custom-panel {
     background-color: var(--primary-background);
