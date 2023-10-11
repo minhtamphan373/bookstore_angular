@@ -1,7 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+:root {
+    --navbar-color: #749BC2;
+    --footer-color: #4682A9;
+    --nav-footer-text-color: #F6F4EB;
+    --button-color: #F6F4EB;
+    --button-text-color: #4682A9;
+    --title-text-color: #000000;
+    --body-text-color: #000000;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { 
+    height: 100%;
+    width: 100%;
+}
+
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    font-size: 12px;
+    color: var(--body-text-color);
+}
