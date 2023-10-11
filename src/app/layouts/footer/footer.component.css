@@ -1,0 +1,27 @@
+.container-footer{
+    background-color: #4682A9;
+    max-width:100%;
+    margin:auto;
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer-col{
+    width: 22%;
+    padding: 0 15px;
+}
+h3{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: inter;
+    color:#F6F4EB
+}
+p{
+    font-size: 20px;
+    font-family: inter;
+    color:#F6F4EB
+}
