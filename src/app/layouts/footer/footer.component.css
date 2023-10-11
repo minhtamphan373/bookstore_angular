@@ -17,11 +17,13 @@ ul{
 h3{
     font-weight: bold;
     font-size: 25px;
-    font-family: inter;
+    text-align: justify;
+    font-family: Roboto;
     color:#F6F4EB
 }
 p{
     font-size: 20px;
-    font-family: inter;
+    font-family: Roboto;
+    text-align: justify;
     color:#F6F4EB
 }
