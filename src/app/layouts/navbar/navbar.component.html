@@ -1,11 +1,12 @@
-<mat-toolbar color="primary">
+<mat-toolbar>
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>menu</mat-icon>
     </button>
-    <span>BOOKWORM</span>
-    <button mat-flat-button color="primary" routerLink="">TRANG CHỦ</button>
-    <button mat-flat-button color="primary" routerLink="./pages/about/about.component.html">GIỚI THIỆU</button>
-    <button mat-flat-button color="primary" routerLink="./pages/contact/contact.component.html">LIÊN HỆ</button>
+    <a href="#" class="site-logo"><span>BOOKWORM</span></a>
+    
+    <button mat-button routerLink="./pages/home/home.component.html">TRANG CHỦ</button>
+    <button mat-button routerLink="./pages/about/about.component.html">GIỚI THIỆU</button>
+    <button mat-button routerLink="./pages/contact/contact.component.html">LIÊN HỆ</button>
     <mat-accordion>
         <mat-expansion-panel hideToggle>                  
         </mat-expansion-panel>
@@ -34,13 +35,11 @@
     <button mat-icon-button class="example-icon favorite-icon">
       <mat-icon>favorite</mat-icon>
     </button>
-    <button mat-flat-button color="primary" routerLink="">ĐĂNG NHẬP</button>
-    <button mat-flat-button color="primary" routerLink="">ĐĂNG KÝ</button>
+    <button mat-button routerLink="">ĐĂNG NHẬP</button>
+    <button mat-button routerLink="">ĐĂNG KÝ</button>
     <button mat-icon-button class="example-icon">
       <mat-icon>share</mat-icon>
     </button>
   
   </mat-toolbar> 
-  
-  
   

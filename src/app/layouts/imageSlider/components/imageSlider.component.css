@@ -32,12 +32,13 @@
     position: absolute;
     top: 50px;
     left: 0;
-    height: 80%;
+    height: 430px;
   }
   
   .dotsContainer {
     display: flex;
     justify-content: center;
+    color: var(--navbar-color);
   }
   
   .dot {

@@ -1,4 +1,12 @@
-<app-navbar></app-navbar>
-<div style="width: 100%; height: 80%;padding: 50px;">
-  <image-slider [slides]="slides"></image-slider>
+    <div class="home-head">
+        <app-navbar></app-navbar>
+          <image-slider [slides]="slides"></image-slider>
+    </div>
+    
+    <div class="home-body">
+        <app-home></app-home>
+    </div>
+
+<div class="home-footer">
+    <app-footer></app-footer>
 </div>
