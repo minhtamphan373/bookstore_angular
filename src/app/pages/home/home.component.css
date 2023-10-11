@@ -1,0 +1,45 @@
+.homepage{
+    display: flex;
+    padding:30px;
+    background-color: azure;
+    
+}
+.card-image-top{
+    width: 100px;
+    height: 150px;
+    cursor: pointer;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+h4{
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    /* text-align: justify; */
+    font-family: Roboto;
+    color:#101010;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+h1{
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    font-family: Roboto;
+    color:#101010
+}
+h5{
+    font-weight: bold;
+    font-size: 12px;
+    /* text-align: justify; */
+    font-family: Roboto;
+    color:#101010;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+a{
+    font-weight: bold;
+    font-size: 14px;
+    color:#c86363;
+    padding-left: 90%;
+}
