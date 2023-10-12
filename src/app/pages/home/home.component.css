@@ -1,15 +1,15 @@
-.homepage{
+.homepage-detail{
     display: flex;
     padding:30px;
     background-color: azure;
-    
 }
 .card-image-top{
     width: 100px;
     height: 150px;
     cursor: pointer;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 h4{
     font-weight: bold;
@@ -24,6 +24,7 @@ h4{
 h1{
     font-weight: bold;
     font-size: 25px;
+    padding-top: 40px;
     text-align: center;
     font-family: Roboto;
     color:#101010
@@ -37,9 +38,9 @@ h5{
     padding-left: 70px;
     padding-right: 70px;
 }
-a{
+.xemthem{
     font-weight: bold;
     font-size: 14px;
     color:#c86363;
-    padding-left: 90%;
+    padding-left: 60%;
 }
