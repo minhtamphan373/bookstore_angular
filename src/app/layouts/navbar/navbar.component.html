@@ -4,9 +4,9 @@
     </button>
     <a href="#" class="site-logo"><span>BOOKWORM</span></a>
     
-    <button mat-button routerLink="./pages/home/home.component.html">TRANG CHỦ</button>
-    <button mat-button routerLink="./pages/about/about.component.html">GIỚI THIỆU</button>
-    <button mat-button routerLink="./pages/contact/contact.component.html">LIÊN HỆ</button>
+    <button mat-button routerLink="/home">TRANG CHỦ</button>
+    <button mat-button routerLink="/about">GIỚI THIỆU</button>
+    <button mat-button routerLink="/contact">LIÊN HỆ</button>
     <mat-accordion>
         <mat-expansion-panel hideToggle>                  
         </mat-expansion-panel>
@@ -14,14 +14,14 @@
                              (closed)="panelOpenState = false" class="custom-panel">
           <mat-expansion-panel-header>
             <mat-panel-title class="panel-title">
-                <a mat-button href="">THƯ VIỆN</a>
+              <button mat-button routerLink="/library">THƯ VIỆN</button>              
             </mat-panel-title>            
           </mat-expansion-panel-header>         
           <section>
             <div class="example-button-row">
-              <a mat-button href="">VĂN HỌC</a>
-              <a mat-button href="">TRINH THÁM</a>
-              <a mat-button href="">TÂM LINH</a>          
+              <a mat-button routerLink="">VĂN HỌC</a>
+              <a mat-button routerLink="">TRINH THÁM</a>
+              <a mat-button routerLink="">TÂM LINH</a>          
             </div>
           </section>
         </mat-expansion-panel>
@@ -35,8 +35,8 @@
     <button mat-icon-button class="example-icon favorite-icon">
       <mat-icon>favorite</mat-icon>
     </button>
-    <button mat-button routerLink="">ĐĂNG NHẬP</button>
-    <button mat-button routerLink="">ĐĂNG KÝ</button>
+    <button mat-button [routerLink]="['/login-user']">ĐĂNG NHẬP</button>
+    <button mat-button routerLink="/register-user">ĐĂNG KÝ</button>
     <button mat-icon-button class="example-icon">
       <mat-icon>share</mat-icon>
     </button>

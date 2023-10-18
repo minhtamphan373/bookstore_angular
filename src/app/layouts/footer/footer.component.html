@@ -1,24 +1,46 @@
+<head>
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+</head>
 <div class="container-footer">
     <div class="row">
         <div class="footer-col">
-            <h3>BOOKWORM</h3>
+            <h2 class="logo"><mat-icon>book</mat-icon>BOOKWORM</h2> 
+            <div class="icon-heading">
+                <mat-icon matIconPrefix>location_on</mat-icon>
+                <h3><span>280 An Dương Vương</span></h3>
+            </div> 
+            <div class="icon-heading">
+                <mat-icon matIconPrefix>phone</mat-icon>
+                <h3><span>0865.399.399</span></h3>
+            </div> 
+            <div class="icon-heading">
+                <mat-icon matIconPrefix>mail</mat-icon>
+                <h3><span>bookworm@gmail.com</span></h3>
+            </div>                
+        </div>
+        <div class="footer-col">  
+            <button mat-button routerLink="/library">THƯ VIỆN</button>                       
+            <mat-list role="list">                
+                <mat-list-item role="listitem" style="cursor: pointer;" routerLink="">Văn Học</mat-list-item>
+                <mat-list-item role="listitem" style="cursor: pointer;" routerLink="">Trinh Thám</mat-list-item>
+                <mat-list-item role="listitem" style="cursor: pointer;" routerLink="">Tâm Linh</mat-list-item>
+            </mat-list>            
         </div>
         <div class="footer-col">
-            <h3>Thư viện </h3>
-            <p><a herf="#">Văn học</a></p>
-            <p><a herf="#">Trinh thám</a></p>
-            <p><a herf="#">Tâm linh</a></p>
+            <button mat-button>VỀ CHÚNG TÔI</button> 
+            <mat-list role="list">                
+                <mat-list-item role="listitem" style="cursor: pointer;" routerLink="/about">Giới Thiệu</mat-list-item>
+                <mat-list-item role="listitem" style="cursor: pointer;" routerLink="/contact">Liên Hệ</mat-list-item>                
+            </mat-list>  
         </div>
         <div class="footer-col">
-            <h3>Thông tin</h3>
-            <p><a herf="#">Giới thiệu</a></p>
-            <p><a herf="#"></a>Liên hệ</p>
-        </div>
-        <div class="footer-col">
-            <h3>Theo dõi</h3>
-            <p>Hotline:0123 456 789</p>
-            <p>Email:bookworm@gmail.com</p>
-            <p>Địa chỉ:280 An Dương Vương, Phường 4, Quận 5 </p>
+            <button mat-button>THEO DÕI CHÚNG TÔI</button> 
+            <mat-list role="list">                
+                <mat-list-item role="listitem" style="cursor: pointer;" routerLink=""><span><i class="fa-brands fa-facebook"></i></span> BookWorm</mat-list-item>
+                <mat-list-item role="listitem" style="cursor: pointer;" routerLink=""><span><i class="fa-brands fa-instagram"></i></span> BW@321</mat-list-item>
+                <mat-list-item role="listitem" style="cursor: pointer;" routerLink=""><span><i class="fa-brands fa-twitter"></i></span> BookWorm@</mat-list-item>        
+            </mat-list>              
         </div>
     </div>
 </div>

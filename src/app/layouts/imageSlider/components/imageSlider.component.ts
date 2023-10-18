@@ -15,7 +15,14 @@ import { SlideInterface } from '../../imageSlider/types/slide.interface';
   styleUrls: ['./imageSlider.component.css'],
 })
 export class ImageSliderComponent implements OnInit, OnDestroy {
-  @Input() slides: SlideInterface[] = [];
+  // @Input() slides: SlideInterface[] = [];
+  slides: SlideInterface[] = [
+    { url: '../assets/image/slide1.png'},
+    { url: '../assets/image/slide7.jpg'},
+    { url: '../assets/image/slide3.jpg'},
+    { url: '../assets/image/slider4.jpg'},
+    { url: '../assets/image/slide6.jpg'},
+  ];
 
   currentIndex: number = 0;
   timeoutId?: number;

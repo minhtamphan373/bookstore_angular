@@ -1,8 +1,17 @@
 .homepage{
+    display:block;
+    position: relative;
+    margin-top: 580px;
+}
+/* .footer{
+    display: block;
+    margin-top: 5rem;
+} */
+.content{
     display: flex;
     padding:30px;
     background-color: azure;
-    
+    position: relative;
 }
 .card-image-top{
     width: 100px;

@@ -1,5 +1,8 @@
 .container-footer{
-    background-color: #4682A9;
+    position: relative;
+    top: 7rem;
+    background-color: var(--navbar-color);
+    color: var(--nav-footer-text-color);
     max-width:100%;
     margin:auto;
 }
@@ -7,23 +10,38 @@
     display:flex;
     flex-wrap: wrap;
 }
-ul{
-    list-style: none;
-}
 .footer-col{
     width: 22%;
-    padding: 0 15px;
+    padding: 0 18.5px;
+    position: relative;
+    top: 5px;
+    font-size: 20px;
 }
-h3{
-    font-weight: bold;
+.logo{
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    text-decoration: none;
     font-size: 25px;
     text-align: justify;
-    font-family: Roboto;
-    color:#F6F4EB
+    font-style: bold;
+    color: #000000;
 }
-p{
-    font-size: 20px;
-    font-family: Roboto;
-    text-align: justify;
-    color:#F6F4EB
+.icon-heading {
+    display: flex;
+    align-items: center;
+    color: #000000;
+} 
+.icon-heading mat-icon {
+    margin-right: 10px; /* Khoảng cách giữa icon và tiêu đề */
+    margin-bottom: 1rem;
+}
+i{
+    font-size: 18px;
+}
+.mat-list-item:hover{
+    cursor: pointer;
+}
+button{
+    display: block;
+    position: relative;
+    left: 5px;
 }

@@ -1,0 +1,48 @@
+
+
+<div class="login-page">    
+  <mat-card class="mat-elevation-z12">    
+    <mat-card-title style="text-align:center;position:relative;top: 2rem;">ĐĂNG NHẬP</mat-card-title>    
+        <mat-card-content >                  
+          <form [formGroup]="loginForm" #formDirective="ngForm" 
+          (ngSubmit)="submitForm()">
+          <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput formControlName="email" placeholder="Ex. pat@example.com">
+            <mat-error *ngIf="this.loginForm.get('email')?.touched && !this.loginForm.get('email')?.hasError('required')">
+              Nhập địa chỉ Email hợp lệ
+            </mat-error>
+            <mat-error *ngIf="this.loginForm.get('email')?.hasError('required')">
+              Email là <strong>bắt buộc</strong>
+            </mat-error>
+            <mat-icon matIconPrefix>email</mat-icon>
+          </mat-form-field>
+            <!--password-->
+          <mat-form-field class="example-full-width">
+            <mat-label>Password</mat-label>
+            <input type="password" matInput formControlName="password" placeholder="">
+            <mat-error  *ngIf="this.loginForm.get('password')?.touched && !this.loginForm.get('password')?.hasError('required') && this.loginForm.get('password')?.hasError('minlength')">
+              Tối thiểu <strong>6 ký tự</strong>
+            </mat-error>
+            <mat-error *ngIf="this.loginForm.get('password')?.hasError('required')">
+              Password là <strong>bắt buộc</strong>
+            </mat-error>
+            <mat-icon matIconPrefix>lock</mat-icon>
+          </mat-form-field>
+
+            <!--checkbox-->    
+            <mat-checkbox>Ghi nhớ!</mat-checkbox>   
+            
+            <!--login-button-->
+            <button
+              mat-button
+              [attr.aria-label]="'login'"
+              class="login-button">
+              ĐĂNG NHẬP
+            </button>
+          </form>
+          <p>Bạn chưa có tài khoản?&nbsp;<span><a routerLink="/register-user">Đăng ký ngay!</a></span></p>
+        </mat-card-content>  
+  </mat-card>                      
+</div>
+

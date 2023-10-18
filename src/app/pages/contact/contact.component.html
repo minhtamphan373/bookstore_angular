@@ -1,0 +1,96 @@
+<head>
+  <link rel="stylesheet" href=
+  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+</head>
+<!---->
+<div class="contact-page">
+  <div class="grid-container">
+    <div class="grid-item">
+      <!--Thông tin-->
+        <h1 class="grid-title">THÔNG TIN</h1>
+        <!--address-->
+        <div class="icon-heading">
+          <mat-icon matIconPrefix>location_on</mat-icon>
+          <h3>Địa chỉ: <span>280 An Dương Vương, Phường 4, Quận 5, TpHCM</span></h3>
+        </div> 
+
+        <!--phone-->
+        <div class="icon-heading">
+          <mat-icon>phone</mat-icon>
+          <h3>Số điện thoại: <span>0865.399.399</span></h3>
+        </div> 
+
+        <!--email-->
+        <div class="icon-heading">
+          <mat-icon matIconPrefix>mail</mat-icon>
+          <h3>Email: <span>bookworm@gmail.com</span></h3>
+        </div> 
+
+        <!--time-->
+        <div class="icon-heading">
+          <mat-icon matIconSuffix>access_time</mat-icon>
+          <h3>Thời gian làm việc: <span>T2 - T7 (8h - 22h)</span></h3>
+        </div>  
+        
+        <!---->
+        <div class="socials">
+          <a href="#" target="_blank" class="ion ion-social-facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" target="_blank" class="ion ion-social-instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" target="_blank" class="ion ion-social-twitter"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <!--Liên hệ-->
+    <div class="grid-item"> 
+      <h1 class="grid-title">LIÊN HỆ</h1>      
+      <!--Form-->
+      <form [formGroup]="contactForm" #formDirective="ngForm" 
+        (ngSubmit)="submitForm()">          
+        <!--username-->
+        <mat-form-field class="example-full-width">
+          <mat-label>Tên đăng nhập</mat-label>
+          <input type="email" matInput formControlName="username" placeholder="">
+          <mat-error *ngIf="this.contactForm.get('username')?.touched && !this.contactForm.get('username')?.hasError('required')">
+            Tên đăng nhập không hợp lệ
+          </mat-error>
+          <mat-error *ngIf="this.contactForm.get('username')?.hasError('required')">
+            Tên đăng nhập là <strong>bắt buộc</strong>
+          </mat-error>
+          <mat-icon matIconPrefix>person</mat-icon>
+        </mat-form-field> 
+
+        <!--email-->
+        <mat-form-field class="example-full-width">
+          <mat-label>Email</mat-label>
+          <input type="email" matInput formControlName="email" placeholder="Ex. pat@example.com">
+          <mat-error *ngIf="this.contactForm.get('email')?.touched && !this.contactForm.get('email')?.hasError('required')">
+            Nhập địa chỉ Email hợp lệ
+          </mat-error>
+          <mat-error *ngIf="this.contactForm.get('email')?.hasError('required')">
+            Email là <strong>bắt buộc</strong>
+          </mat-error>
+          <mat-icon matIconPrefix>email</mat-icon>
+        </mat-form-field>
+
+        <!--textarea-->
+        <mat-form-field class="example-full-width">
+          <mat-label>Message</mat-label>
+          <mat-icon matIconPrefix>message</mat-icon>
+          <textarea type="textarea" matInput formControlName="message" placeholder=""></textarea>
+          <mat-error  *ngIf="this.contactForm.get('message')?.touched && !this.contactForm.get('message')?.hasError('required') && this.contactForm.get('message')?.hasError('minlength')">
+            Tối thiểu <strong>24 ký tự</strong>
+          </mat-error>
+          <mat-error *ngIf="this.contactForm.get('message')?.hasError('required')">
+            Message là <strong>bắt buộc</strong>
+          </mat-error>          
+        </mat-form-field>             
+        <button
+          mat-button
+          [attr.aria-label]="'sent'"
+          class="sent-button"          >
+          GỬI
+        </button>
+      </form>  
+    </div>
+  </div>
+</div>

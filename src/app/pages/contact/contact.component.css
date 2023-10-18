@@ -1,0 +1,85 @@
+.contact-page{
+    position: relative;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 550px auto;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    top:5rem;
+    height: 80%;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+  }
+.grid-item {
+    display: block;
+    position: relative;
+    top: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid red;
+    border-radius: 1rem;
+    padding: 20px;
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+}
+/* mat-card {
+    width: 80%;
+    margin: 10% auto;
+    border-radius: 8px;
+    background-color: darkgray;
+} */
+
+mat-form-field {
+    width: 60%;
+    display: block;
+    margin: auto;
+}
+mat-card-content {
+    margin-top: 20px;
+}
+mat-icon{
+    color: black;
+}
+
+.sent-button {
+    margin-top: 20px;
+    display: block;
+    width: 60%;
+    margin: 20px auto;
+    background-color: #4682A9;
+}
+.icon-heading {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+} 
+.icon-heading mat-icon {
+    margin-right: 10px; /* Khoảng cách giữa icon và tiêu đề */
+    margin-bottom: 1rem;
+}
+
+.socials {
+    font-size: 2rem;
+}
+a {
+    padding: 10px;
+    color:black;
+    transition: color ease-out 0.1s;
+
+    &:hover {
+        color: black;
+    }
+}
+
