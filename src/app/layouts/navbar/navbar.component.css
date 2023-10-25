@@ -7,20 +7,37 @@
     z-index: 9999;
     background-color: var(--navbar-color);
     color: var(--nav-footer-text-color);
-    padding: 0 30px;
+    padding: .5rem 2rem;
 }
 
 .site-logo {
     color: var(--title-text-color);
     text-decoration: none;
-    font-size: 25px;
+    font-size: 30px;
     font-style: bold;
 }
 
-.mat-button {
+.mat-mdc-menu-content, .mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text {
+    background-color: var(--navbar-color);
+}
+
+.btn-title,
+.sub-btn-title {
     background-color: var(--navbar-color);
     color: var(--nav-footer-text-color);
+    text-transform: uppercase;
 }
+
+
+.sub-btn-title {
+    padding-left: 1rem;
+}
+
+.sub-btn-title:hover{
+    color: var(--navbar-color);
+}
+
+
 
 .mat-accordion .custom-panel {
     background-color: var(--navbar-color);
