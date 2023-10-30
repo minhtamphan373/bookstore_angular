@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
 import { FooterComponent } from './layouts/footer/footer.component';
-import { LibraryComponent } from './pages/library/library.component';
 import { LoginUserComponent } from './pages/login-user/login-user.component';
 import { RegisterUserComponent } from './pages/register-user/register-user.component';
 import { AboutComponent } from './pages/about/about.component';
@@ -28,6 +27,14 @@ import {FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { Validator } from '@angular/forms';
 import { FormControl } from '@angular/forms';
+import { MatChipsModule} from '@angular/material/chips';
+import { ServerService } from './services/server.services';
+import { LibraryComponent } from './pages/library/library.component';
+import { SachService } from './services/sach.service';
+import { HttpClientModule } from '@angular/common/http';
+import { EditSachComponent } from './components/edit-sach/edit-sach.component';
+import { MatMenuModule} from '@angular/material/menu';
+import { BookDetailsComponent } from './pages/book-details/book-details.component';
 
 @NgModule({
   declarations: [
@@ -35,17 +42,19 @@ import { FormControl } from '@angular/forms';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    LibraryComponent,
     LoginUserComponent,
     RegisterUserComponent,
     AboutComponent,
     ContactComponent,
+    LibraryComponent,
+    EditSachComponent,
+    BookDetailsComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    RouterModule,
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
@@ -61,8 +70,16 @@ import { FormControl } from '@angular/forms';
     FontAwesomeModule,
     MatGridListModule,
     ReactiveFormsModule,
+    RouterModule,
+    MatChipsModule,
+    HttpClientModule,
+    FormsModule,
+    MatMenuModule,
   ],
-  providers: [],
+  providers: [
+    ServerService,
+    SachService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

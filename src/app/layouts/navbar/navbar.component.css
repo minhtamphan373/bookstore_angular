@@ -17,10 +17,6 @@
     font-style: bold;
 }
 
-.mat-mdc-menu-content, .mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text {
-    background-color: var(--navbar-color);
-}
-
 .btn-title,
 .sub-btn-title {
     background-color: var(--navbar-color);

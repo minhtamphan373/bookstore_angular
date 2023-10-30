@@ -1,18 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { SlideInterface } from './layouts/imageSlider/types/slide.interface';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
+
+
+
 @Component({
   selector: 'app-root',
   template: `
     <!--navbar -->
     <app-navbar></app-navbar>
-
-
     <!-- router -->
     <router-outlet></router-outlet>
-
-
     <!-- footer -->
     <app-footer></app-footer>
   `,
@@ -22,6 +21,9 @@ import { HomeComponent } from './pages/home/home.component';
 })
 export class AppComponent {
   title = 'bookstoreAngular';
+  
+
+
   // slides: SlideInterface[] = [
   //   { url: '../assets/image/slide1.png'},
   //   { url: '../assets/image/slide7.jpg'},
@@ -31,3 +33,4 @@ export class AppComponent {
   // ];
   
 }
+

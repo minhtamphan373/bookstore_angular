@@ -1,0 +1,41 @@
+
+<div *ngIf="sach">
+    <h2>{{ sach.tenSach }}</h2>
+    <div>
+        Name:
+        <input [(ngModel)]="sach.tenSach" placeholder="TenSach"/>
+    </div>
+    <div>
+        Name:
+        <input [(ngModel)]="sach.tacGia" placeholder="TacGia"/>
+    </div>
+    <div>
+        Name:
+        <input [(ngModel)]="sach.soTrang" placeholder="SoTrang"/>
+    </div>
+    <div>
+        Name:
+        <input [(ngModel)]="sach.hinhAnh" placeholder="HinhAnh"/>
+    </div>
+    <div>
+        Name:
+        <input [(ngModel)]="sach.tomTat" placeholder="Tom tat "/>
+    </div>
+    <div>
+        Name:
+        <input [(ngModel)]="sach.pdfFile" placeholder=" pdf"/>
+    </div>
+    <div>
+        Name:
+        <input [(ngModel)]="sach.theLoai" placeholder=" the loai "/>
+    </div>
+    <div>
+        Name:
+        <input [(ngModel)]="sach.idTheLoai" placeholder="id the loai "/>
+    </div>
+    
+    <button (click)="updateSach(sach)" *ngIf="sach.id">Save</button>
+    <button (click)="deleteSach(sach)" *ngIf="sach.id">Delete</button>
+    <button (click)="createSach(sach)" *ngIf="!sach.id">Create</button>
+</div>
+    
