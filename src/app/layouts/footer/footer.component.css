@@ -14,16 +14,16 @@
     flex-wrap: wrap;
 }
 .footer-col{
-    width: 22%;
+    width: 19.5%;
     padding: 0 18.5px;
     position: relative;
     top: 5px;
-    font-size: 20px;
+    font-size: 22px;
 }
 .logo{
     font-family: Roboto, "Helvetica Neue", sans-serif;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 28px;
     text-align: justify;
     font-style: bold;
     color: #000000;
@@ -42,9 +42,13 @@ i{
 }
 .mat-list-item:hover{
     cursor: pointer;
+    font-weight: bolder;
 }
 button{
     display: block;
     position: relative;
     left: 5px;
+}
+.thuvien{
+    padding-right:200px;
 }
