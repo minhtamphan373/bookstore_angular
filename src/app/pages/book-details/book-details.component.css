@@ -1,0 +1,81 @@
+.headerbookdetail{
+    margin-top:100px;
+    /* display: flex; */
+}
+button{ 
+    margin-left: 85%;
+    font-size:20px;
+    margin-bottom: 10px;
+}
+.content{
+    display: flex;
+    padding:30px;
+    position: relative;
+}
+.card-image-top{
+    width: 100px;
+    height: 150px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 70px;
+    margin-left: 70px;
+}
+h4{
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    font-family: Roboto;
+    color:#101010;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.bgimage{
+    /* detail từng trang sách */
+    /* background-color: rgb(214, 232, 247); */
+    background-color: azure;
+    margin-right:10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 20%;
+
+
+}
+.btn-title{
+    /* tiêu đề */
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 5px;
+    /* text-align: center; */
+    font-family: Roboto;
+    color:#101010;
+    margin-top: 20px;
+    margin-left: 50%;
+}
+h5{
+    /* font-weight: bold; */
+    font-size: 15px;
+    text-align: center;
+    font-family: Roboto;
+    color:#101010;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.btn-xemthem{
+    box-sizing: 80px;
+    color: rgb(33, 112, 192);
+    border-radius: 30px;
+    background-color: rgb(206, 231, 231);
+    margin:5px;
+}
+.footer-sotrang{
+    display: flex;
+    margin-right: 50%;
+    padding-left: 50%;
+}
+.col{
+    padding-bottom: 30px;
+}
+.bg-color{
+    background-color: azure;
+}
