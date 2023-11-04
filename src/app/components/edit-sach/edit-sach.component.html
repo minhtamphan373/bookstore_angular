@@ -1,41 +1,37 @@
-
+<div class="container">
 <div *ngIf="sach">
     <h2>{{ sach.tenSach }}</h2>
-    <div>
-        Name:
-        <input [(ngModel)]="sach.tenSach" placeholder="TenSach"/>
+    <div class="form-edit">
+        <div class="editsach-title">
+            <div class="title-edit">Tên sách</div>
+            <input [(ngModel)]="sach.tenSach" placeholder="TenSach" class="input-title"/>
+        </div>
+        <div class="editsach-title">
+            <div class="title-edit">Tác giả</div>
+            <input [(ngModel)]="sach.tacGia" placeholder="TacGia" class="input-title"/>
+        </div>
+        <div class="editsach-title">
+            <div class="title-edit">Số trang</div>
+            <input [(ngModel)]="sach.soTrang" placeholder="SoTrang" class="input-title"/>
+        </div>
+        <div class="editsach-title">
+            <div class="title-edit">Tóm tắt</div>
+            <div>
+                <textarea rows="10" [(ngModel)]="sach.tomTat" placeholder="Tom tat " class="input-title"></textarea>
+            </div>
+        </div>
+        <!-- <div class="editsach-title">
+            Thể loại:
+            <input [(ngModel)]="sach.idTheLoai" placeholder="the loai" class="input-title"/>
+        </div> -->
+
+        <div class="btn-edit">
+            <button class="btn" (click)="updateSach(sach)" *ngIf="sach.id">Save</button>
+            <button class="btn" (click)="deleteSach(sach)" *ngIf="sach.id">Delete</button>
+            <button class="btn" (click)="createSach(sach)" *ngIf="!sach.id">Create</button>
+        </div>
     </div>
-    <div>
-        Name:
-        <input [(ngModel)]="sach.tacGia" placeholder="TacGia"/>
-    </div>
-    <div>
-        Name:
-        <input [(ngModel)]="sach.soTrang" placeholder="SoTrang"/>
-    </div>
-    <div>
-        Name:
-        <input [(ngModel)]="sach.hinhAnh" placeholder="HinhAnh"/>
-    </div>
-    <div>
-        Name:
-        <input [(ngModel)]="sach.tomTat" placeholder="Tom tat "/>
-    </div>
-    <div>
-        Name:
-        <input [(ngModel)]="sach.pdfFile" placeholder=" pdf"/>
-    </div>
-    <div>
-        Name:
-        <input [(ngModel)]="sach.theLoai" placeholder=" the loai "/>
-    </div>
-    <div>
-        Name:
-        <input [(ngModel)]="sach.idTheLoai" placeholder="id the loai "/>
-    </div>
-    
-    <button (click)="updateSach(sach)" *ngIf="sach.id">Save</button>
-    <button (click)="deleteSach(sach)" *ngIf="sach.id">Delete</button>
-    <button (click)="createSach(sach)" *ngIf="!sach.id">Create</button>
 </div>
-    
+
+
+

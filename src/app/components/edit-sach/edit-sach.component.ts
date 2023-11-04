@@ -9,9 +9,9 @@ import { SachService } from 'src/app/services/sach.service';
   styleUrls: ['./edit-sach.component.css']
 })
 export class EditSachComponent implements OnInit {
-  @Input() sach?: Sach;
+  @Input() sach: Sach;
   @Output() sachesUpdated = new EventEmitter<Sach[]>();
-
+  sachToEdit: Sach;
 
 
   constructor(
@@ -37,6 +37,10 @@ export class EditSachComponent implements OnInit {
     this.sachService
     .createSach(sach)
     .subscribe((saches: Sach[]) => this.sachesUpdated.emit(saches));
+  }
+
+  initNewSach(){
+    this.sachToEdit = new Sach();
   }
 
 

@@ -8,6 +8,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { LibraryComponent } from './pages/library/library.component';
 import { EditSachComponent } from './components/edit-sach/edit-sach.component';
 import { BookDetailsComponent } from './pages/book-details/book-details.component';
+import { ListSachComponent } from './pages/list-sach/list-sach.component';
 
 
 const routes: Routes = [
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'library', component: LibraryComponent},
   {path: 'editsach', component: EditSachComponent},
   {path: 'bookdetail', component: BookDetailsComponent},
+  {path: 'listsach', component: ListSachComponent},
 
 
 ];

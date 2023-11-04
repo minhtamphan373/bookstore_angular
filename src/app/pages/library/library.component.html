@@ -1,33 +1,5 @@
-<!-- <div class="container">
-
-<button (click)="initNewSach()">Create New Book</button>
-
-<h1>Hi</h1>
-<table>
-    <thead>
-        <th>Ten sach</th>
-        <th>Tac gia</th>
-        <th>So trang</th>
-        <th></th>
-    </thead>
-    <tbody>
-        <tr *ngFor="let sach of saches">
-            <td>{{sach.tenSach}}</td>
-            <td>{{sach.tacGia}}</td>
-            <td>{{sach.hinhAnh }}</td>
-            <td>{{sach.tomTat}}</td>
-            <td>{{sach.pdfFile }}</td>
-            <td>{{sach.theLoai }}</td>
-            <td>{{sach.idTheLoai}}</td>
-
-            <td><button (click)="editSach(sach)">Edit</button></td>
-        </tr>
-    </tbody>
-</table>
-</div> -->
-
 <div class="container ">
-
+<button (click)="initNewSach()" class="btn ">Thêm Sách Mới</button>
     <div class="row">
 
         <div *ngFor="let sach of saches" class="col-lg-3 mt-3 mb-3">
@@ -35,17 +7,15 @@
                 <img src="" width="100%" alt="">
                 <h3 class="mt-2 mb-2">{{sach.tenSach}}</h3>
                 <h4>Tác giả: {{sach.tacGia}}</h4>
-                <p>Thể loại sách: {{sach.theLoai}}</p>
-                <button (click)="editSach(sach)">Edit</button>
-                <a href="" routerLink="/bookdetail" class="btn btn-light btn-sm mt-2">Read more</a>
+                <button (click)="editSach(sach)" class="btn">Edit</button>
+                <!-- <button routerLink="/editsach" class="btn btn-light btn-sm mt-2">Edit</button> -->
             </div>
         </div>
     </div>
     
 </div>
 
-
 <app-edit-sach 
 [sach]="sachToEdit"
-(sachesUpdated)="updateSachList($event)"
+(sachesUpdated)="updateSachesList($event)"
 ></app-edit-sach>

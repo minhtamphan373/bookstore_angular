@@ -1,0 +1,23 @@
+.container {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.edit-title {
+    padding-bottom: 10px;
+}
+
+.input-title {
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.btn-edit {
+    padding-top: 5px;
+}
+
+.btn {
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    margin-right: 5px;
+}

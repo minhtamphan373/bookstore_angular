@@ -6,6 +6,5 @@ export class Sach {
     hinhAnh : string;
     tomTat : string;
     pdfFile : string;
-    theLoai : string;
     idTheLoai : number;
 }

@@ -6,3 +6,8 @@
     padding: 10px;
     background-color: var(--cover-book-color);
 }
+
+.btn {
+    background-color: var(--button-text-color);
+    color: var(--button-color);
+}

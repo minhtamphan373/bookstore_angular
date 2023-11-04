@@ -12,7 +12,7 @@ import { environment } from 'src/environments/environment';
 
 export class SachService {
 
-  private url = "Sach";
+  private url = "Saches";
   constructor( private http: HttpClient){ }
 
   public getSaches(): Observable<Sach[]>{
@@ -27,7 +27,7 @@ export class SachService {
   public updateSach(sach: Sach): Observable<Sach[]>{
 
     return this.http.put<Sach[]>(
-      `${environment.apiUrl}/${this.url}`, sach);
+      `${environment.apiUrl}/${this.url}/${sach.id}`, sach);
   }
 
   public createSach(sach: Sach): Observable<Sach[]>{
