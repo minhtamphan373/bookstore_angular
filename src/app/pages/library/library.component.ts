@@ -30,8 +30,8 @@ export class LibraryComponent{
 
   editSach(sach: Sach){
     this.sachToEdit = sach;
+    // alert("Please select")
   }
-
   // updateSach(sach: Sach){}
 }
 

@@ -1,175 +1,31 @@
-<div class="headerbookdetail">
-    <button mat-button routerLink="/library" class="btn-title">Văn học</button>
-    <!-- <button routerLink="/library" class="btn-sapxep">Mới nhất </button> -->
-    <button mat-button [matMenuTriggerFor]="menu">Sắp xếp</button>
-    <mat-menu #menu="matMenu">
-    <button mat-menu-item>Mới nhất</button>
-    <button mat-menu-item>Cũ nhất</button>
-    </mat-menu>
-</div>
-<!-- <div class="bookdetail">
-    <div class="bookdetail-content">
-        <div class="content">
-            <div class="bgimage">
-                <img src="../../../assets/image/homepage/vanhoc1.jpg" alt="" class="card-image-top">
-                <h4 class="sach-title">Ánh lửa . trong tro tàn</h4>
-                <h5 class="sach-tacgia">Sabaa Tahir</h5>
-            </div>
-            <div class="bgimage">
-                <img src="../../../assets/image/homepage/vanhoc3.jpg" alt="" class="card-image-top">
-                <h4 class="sach-title">Những loài hoa có gai</h4>
-                <h5 class="sach-tacgia">Lý Thượng Long</h5>
-            </div>
-            <div class="bgimage">
-                <img src="../../../assets/image/homepage/vanhoc4.jpg" alt="" class="card-image-top">
-                <h4 class="sach-title">Tủ giày số 123</h4>
-                <h5 class="sach-tacgia">Yuuki</h5>
-            </div>
-            <div class="bgimage">
-                <img src="../../../assets/image/homepage/vanhoc5.jpg" alt="" class="card-image-top">
-                <h4 class="sach-title">Bầu trời năm ấy vẫn cứ ngát xanh</h4>
-                <h5 class="sach-tacgia">Seisyun bot</h5>  
-            </div>
+<div class="book-details-page" *ngIf="sachData">
+    <div class="row book-details">
+        <!-- <div class="col-3">
+            <div class="container">
+                <h1>Thể loại</h1>
+                <div class="category" *ngFor="let theloai of theloaiList">
+                    <h3>{{theloai.tenTheLoai}}</h3>                    
+                </div>
+            </div>            
+        </div> -->
+        <div class="col-4">            
+            <img class="sach-image" src="{{sachData.hinhAnh}}" alt="">  
+            <div class="book-button-col">
+                <a mat-raised-button href="{{sachData.pdfFile}}" target="_blank">Đọc sách</a>
+                <a mat-raised-button href="{{sachData.pdfFile}}" target="_blank">Tải sách</a>
+            </div>                    
         </div>
-         <div class="content">
-            <div class="bgimage">
-                <img src="../../../assets/image/pagedetail/vanhoc6.jpg" alt="" class="card-image-top">
-                <h4 class="sach-title">Suối nguồn</h4>
-                <h5 class="sach-tacgia">Ayn Rand</h5>
-            </div>
-            <div class="bgimage">
-                <img src="../../../assets/image/pagedetail/vanhoc7.jpg" alt="" class="card-image-top">
-                <h4 class="sach-title">Rừng Nauy</h4>
-                <h5 class="sach-tacgia">Murakami Haruki</h5>
-            </div> 
-            <div class="bgimage">
-                <img src="../../../assets/image/pagedetail/vanhoc8.jpg" alt="" class="card-image-top">
-                <h4 class="sach-title">Bỉ Vỏ</h4>
-                <h5 class="sach-tacgia">Nguyên Hồng</h5>
-            </div>
-            <div class="bgimage">
-                <img src="../../../assets/image/pagedetail/vanhoc9.jpg" alt="" class="card-image-top">
-                <h4 class="sach-title">Quê nội</h4>
-                <h5 class="sach-tacgia">Võ Quảng</h5>
-            </div> 
-        </div> 
-        <div class="content">
-            <div class="bgimage">
-                <img src="../../../assets/image/pagedetail/vanhoc10.jpg" alt="" class="card-image-top">
-                <h4 class="sach-title">Bạn chanh</h4>
-                <h5 class="sach-tacgia">Giá Oản Chúc</h5>
-            </div>
-            <div class="bgimage">
-                <img src="../../../assets/image/pagedetail/vanhoc11.jpeg" alt="" class="card-image-top">
-                <h4 class="sach-title">Chúa Ruồi</h4>
-                <h5 class="sach-tacgia"> William Golding</h5>
-            </div>
-            <div class="bgimage">
-                <img src="../../../assets/image/pagedetail/vanhoc12.jpg" alt="" class="card-image-top">
-                <h4 class="sach-title">Thiên tài bên trái, kẻ điên bên phải</h4>
-                <h5 class="sach-tacgia">Cao Minh</h5>
-            </div>
-            <div class="bgimage">
-                <img src="../../../assets/image/pagedetail/vanhoc13.jpg" alt="" class="card-image-top">
-                <h4 class="sach-title">Nhà giả kim</h4>
-                <h5 class="sach-tacgia"> Paulo Coelho</h5>
-            </div>
-        </div>
-    </div>
-    <div class="footer-sotrang">
-        <button routerLink="/library" class="btn-xemthem">1</button>
-        <button routerLink="/library" class="btn-xemthem">2</button>
-        <button routerLink="/library" class="btn-xemthem">3</button>
-        <button routerLink="/library" class="btn-xemthem">4</button>
-        <button routerLink="/library" class="btn-xemthem">5</button>
-    </div>
     
-</div> -->
-<div class="container text-center">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-      <div class="col">
-        <img src="../../../assets/image/homepage/vanhoc1.jpg" alt="" class="card-image-top">
-                <h4 class="sach-title">Ánh lửa trong tro tàn</h4>
-                <h5 class="sach-tacgia">Sabaa Tahir</h5>
-      </div>
-      <div class="col">
-        <img src="../../../assets/image/homepage/vanhoc3.jpg" alt="" class="card-image-top">
-                <h4 class="sach-title">Những loài hoa có gai</h4>
-                <h5 class="sach-tacgia">Lý Thượng Long</h5>
-      </div>
-      <div class="col">
-        <img src="../../../assets/image/homepage/vanhoc4.jpg" alt="" class="card-image-top">
-                <h4 class="sach-title">Tủ giày số 123</h4>
-                <h5 class="sach-tacgia">Yuuki</h5>
-      </div>
-      <div class="col">
-        <img src="../../../assets/image/homepage/vanhoc5.jpg" alt="" class="card-image-top">
-                <h4 class="sach-title">Bầu trời năm ấy vẫn cứ ngát xanh</h4>
-                <h5 class="sach-tacgia">Seisyun bot</h5>  
+        <div class="col-6">
+            <div class="details">
+                <h1>{{sachData.tenSach}}</h1>
+                <h3>Tác giả: {{sachData.tacGia}}</h3>
+                <h3>Thể loại: {{theLoaiData?.tenTheLoai}}</h3>
+                <h3>Số trang: {{sachData.soTrang}}</h3>                
+                <h3>Lượt đọc: </h3>
+                <h3>Lượt tải: </h3>
+                <h3>Mô tả: {{sachData.tomTat}}</h3>                              
+            </div>
+        </div>
     </div>
-  </div>
-
-  <div class="container text-center">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-        <div class="bg-color">
-            <div class="col">
-                <img src="../../../assets/image/pagedetail/vanhoc6.jpg" alt="" class="card-image-top">
-                <h4 class="sach-title">Suối nguồn</h4>
-                <h5 class="sach-tacgia">Ayn Rand</h5>
-            </div>
-        </div>
-        <div class="bg-color">
-            <div class="col">
-                <img src="../../../assets/image/pagedetail/vanhoc7.jpg" alt="" class="card-image-top">
-                        <h4 class="sach-title">Rừng Nauy</h4>
-                        <h5 class="sach-tacgia">Murakami Haruki</h5>
-            </div>
-        </div>
-        <div class="bg-color">
-            <div class="col">
-                <img src="../../../assets/image/pagedetail/vanhoc8.jpg" alt="" class="card-image-top">
-                        <h4 class="sach-title">Bỉ Vỏ</h4>
-                        <h5 class="sach-tacgia">Nguyên Hồng</h5>
-            </div>
-        </div>
-        <div class="bg-color">
-            <div class="col">
-                <img src="../../../assets/image/pagedetail/vanhoc9.jpg" alt="" class="card-image-top">
-                    <h4 class="sach-title">Quê nội</h4>
-                    <h5 class="sach-tacgia">Võ Quảng</h5>
-        </div>
-  </div>
-  </div>
-
 </div>
-
-  <div class="container text-center">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-      <div class="col">
-        <img src="../../../assets/image/pagedetail/vanhoc10.jpg" alt="" class="card-image-top">
-                <h4 class="sach-title">Bạn chanh</h4>
-                <h5 class="sach-tacgia">Giá Oản Chúc</h5>
-      </div>
-      <div class="col">
-        <img src="../../../assets/image/pagedetail/vanhoc11.jpeg" alt="" class="card-image-top">
-                <h4 class="sach-title">Chúa Ruồi</h4>
-                <h5 class="sach-tacgia"> William Golding</h5>
-      </div>
-      <div class="col">
-        <img src="../../../assets/image/pagedetail/vanhoc12.jpg" alt="" class="card-image-top">
-                <h4 class="sach-title">Thiên tài bên trái, kẻ điên bên phải</h4>
-                <h5 class="sach-tacgia">Cao Minh</h5>
-      </div>
-      <div class="col">
-        <img src="../../../assets/image/pagedetail/vanhoc13.jpg" alt="" class="card-image-top">
-                <h4 class="sach-title">Nhà giả kim</h4>
-                <h5 class="sach-tacgia"> Paulo Coelho</h5>
-    </div>
-  </div>
-  <div class="footer-sotrang">
-    <button routerLink="/library" class="btn-xemthem">1</button>
-    <button routerLink="/library" class="btn-xemthem">2</button>
-    <button routerLink="/library" class="btn-xemthem">3</button>
-    <button routerLink="/library" class="btn-xemthem">4</button>
-    <button routerLink="/library" class="btn-xemthem">5</button>
-</div> 

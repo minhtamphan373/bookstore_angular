@@ -35,7 +35,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { EditSachComponent } from './components/edit-sach/edit-sach.component';
 import { MatMenuModule} from '@angular/material/menu';
 import { BookDetailsComponent } from './pages/book-details/book-details.component';
-import { ListSachComponent } from './pages/list-sach/list-sach.component';
+
 
 @NgModule({
   declarations: [
@@ -50,8 +50,6 @@ import { ListSachComponent } from './pages/list-sach/list-sach.component';
     LibraryComponent,
     EditSachComponent,
     BookDetailsComponent,
-    ListSachComponent,
-
   ],
   imports: [
     BrowserModule,

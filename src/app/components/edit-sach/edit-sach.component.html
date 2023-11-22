@@ -9,16 +9,24 @@
         <div class="editsach-title">
             <div class="title-edit">Tác giả</div>
             <input [(ngModel)]="sach.tacGia" placeholder="TacGia" class="input-title"/>
-        </div>
+        </div>        
         <div class="editsach-title">
             <div class="title-edit">Số trang</div>
             <input [(ngModel)]="sach.soTrang" placeholder="SoTrang" class="input-title"/>
+        </div>
+        <div class="editsach-title">
+            <div class="title-edit">Hình ảnh</div>
+            <input type="file" (change)="selectFile($event)" class="input-title"/>
         </div>
         <div class="editsach-title">
             <div class="title-edit">Tóm tắt</div>
             <div>
                 <textarea rows="10" [(ngModel)]="sach.tomTat" placeholder="Tom tat " class="input-title"></textarea>
             </div>
+        </div>
+        <div class="editsach-title">
+            <div class="title-edit">Pdf</div>
+            <input type="file" (change)="selectFile($event)" class="input-title"/>
         </div>
         <!-- <div class="editsach-title">
             Thể loại:

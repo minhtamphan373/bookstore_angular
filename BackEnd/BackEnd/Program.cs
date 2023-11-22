@@ -19,7 +19,10 @@ builder.Services.AddCors(options => options.AddPolicy(name: "SachOrigins",
     policy =>
     {
       policy.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader();
-    }));
+    })
+);
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+builder.Services.AddHttpClient();
 
 var app = builder.Build();
 
@@ -30,6 +33,7 @@ if (app.Environment.IsDevelopment())
   app.UseSwaggerUI();
 }
 
+app.UseStaticFiles();
 app.UseCors("SachOrigins");
 app.UseHttpsRedirection();
 

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace BackEnd.Models
@@ -12,6 +12,6 @@ namespace BackEnd.Models
         public string? HinhAnh { get; set; }
         public string? TomTat { get; set; }
         public string? PdfFile { get; set; }
-        public int? IdTheLoai { get; set; }
+        public int? IdTheLoai { get; set; }       
     }
 }
