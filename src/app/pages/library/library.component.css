@@ -9,5 +9,5 @@
 
 .btn {
     background-color: var(--button-text-color);
-    color: var(--button-color);
+    color: var(--button-color);   
 }

@@ -2,12 +2,13 @@
     padding-top: 150px;
 }
 .container-footer{
-    position: relative;
-    top: 7rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
     background-color: var(--navbar-color);
     color: var(--nav-footer-text-color);
-    max-width:100%;
-    margin:auto;
+    width: 100%;
+    margin: auto;
 }
 .row{
     display:flex;

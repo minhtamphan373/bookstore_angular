@@ -2,20 +2,22 @@
 <button (click)="initNewSach()" class="btn ">Thêm Sách Mới</button>
     <div class="row">
 
-        <div *ngFor="let sach of saches" class="col-lg-3 mt-3 mb-3">
-            <div class="box">
-                <img src="" width="100%" alt="">
+        <div *ngFor="let sach of saches" class="col-lg-3 mt-3 mb-3">            
+            <div class="box">   
+                <a routerLink="/bookdetail/{{sach.id}}"><img src="{{sach.hinhAnh}}" width="100%" alt=""></a>                                           
                 <h3 class="mt-2 mb-2">{{sach.tenSach}}</h3>
-                <h4>Tác giả: {{sach.tacGia}}</h4>
-                <button (click)="editSach(sach)" class="btn">Edit</button>
-                <!-- <button routerLink="/editsach" class="btn btn-light btn-sm mt-2">Edit</button> -->
+                <h4>Tác giả: {{sach.tacGia}}</h4> 
+                <a target="_blank" href="{{sach.pdfFile}}" title="{{sach.tenSach}}">
+                    <button>Đọc sách</button> 
+                </a>                                             
+                <button (click)="editSach(sach)" class="btn">Edit</button>                                
             </div>
         </div>
     </div>
     
 </div>
 
-<app-edit-sach 
+<app-edit-sach >
 [sach]="sachToEdit"
 (sachesUpdated)="updateSachesList($event)"
-></app-edit-sach>
+</app-edit-sach>

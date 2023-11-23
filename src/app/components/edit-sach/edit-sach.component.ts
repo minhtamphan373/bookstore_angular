@@ -12,37 +12,40 @@ export class EditSachComponent implements OnInit {
   @Input() sach: Sach;
   @Output() sachesUpdated = new EventEmitter<Sach[]>();
   sachToEdit: Sach;
-
+  file: any;
 
   constructor(
     private sachService: SachService,
     private http: HttpClient,
-    ){}
+  ) { }
 
   ngOnInit(): void { }
 
-  updateSach(sach: Sach){ 
+  updateSach(sach: Sach) {
     this.sachService
-    .updateSach(sach)
-    .subscribe((saches: Sach[]) => this.sachesUpdated.emit(saches));
+      .updateSach(sach)
+      .subscribe((saches: Sach[]) => this.sachesUpdated.emit(saches));
   }
 
-  deleteSach(sach: Sach){
+  deleteSach(sach: Sach) {
     this.sachService
-    .deleteSach(sach)
-    .subscribe((saches: Sach[]) => this.sachesUpdated.emit(saches));
+      .deleteSach(sach)
+      .subscribe((saches: Sach[]) => this.sachesUpdated.emit(saches));
   }
 
-  createSach(sach: Sach){
+  createSach(sach: Sach) {
     this.sachService
-    .createSach(sach)
-    .subscribe((saches: Sach[]) => this.sachesUpdated.emit(saches));
+      .createSach(sach)
+      .subscribe((saches: Sach[]) => this.sachesUpdated.emit(saches));
   }
 
-  initNewSach(){
+  initNewSach() {
     this.sachToEdit = new Sach();
   }
 
+  selectFile(e: any) {
+    this.sach.hinhAnh = e.target.files[0];
+  }
 
- 
+
 }
