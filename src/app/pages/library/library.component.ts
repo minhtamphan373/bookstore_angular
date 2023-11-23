@@ -9,18 +9,16 @@ import { SachService } from 'src/app/services/sach.service';
 })
 export class LibraryComponent{
   saches: Sach[] = [];
-  sachToEdit?: Sach;
+  sachToEdit: Sach;
 
-  constructor(private sachService: SachService) {
-  
-  }
+  constructor(private sachService: SachService){ }
 
   ngOnInit(): void {
     this.sachService.getSaches()
-    .subscribe((result: Sach[]) => (this.saches = result));
+      .subscribe((result: Sach[]) => (this.saches = result));
   }
 
-  updateSachList(saches: Sach[]){
+  updateSachesList(saches: Sach[]){
     this.saches = saches;
   }
 
@@ -31,7 +29,5 @@ export class LibraryComponent{
   editSach(sach: Sach){
     this.sachToEdit = sach;
   }
-
-  // updateSach(sach: Sach){}
 }
 
