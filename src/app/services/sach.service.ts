@@ -28,7 +28,8 @@ export class SachService {
   public updateSach(sach: Sach): Observable<Sach[]> {
 
     return this.http.put<Sach[]>(
-      `${environment.apiUrl}/${this.url}/${sach.id}`, sach);
+      `${environment.apiUrl}/${this.url}`, sach);
+      // `${environment.apiUrl}/${this.url}/${sach.id}`, sach);
   }
 
   public createSach(sach: Sach): Observable<Sach[]> {

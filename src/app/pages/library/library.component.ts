@@ -31,7 +31,7 @@ export class LibraryComponent{
     // alert("Please select")
   }
 
-  // updateSach(sach: Sach){}
+
 
 }
 

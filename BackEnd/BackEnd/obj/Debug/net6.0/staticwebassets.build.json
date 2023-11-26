@@ -1,11 +1,88 @@
 {
   "Version": 1,
-  "Hash": "cPqfaYa80spAnn83F5ijizHSf4K7X8YH25xJLDw7OM8=",
+  "Hash": "GgkJHtby5140gPvTs+isL8yZh/Zn0guRUb/GMGkTb7w=",
   "Source": "BackEnd",
   "BasePath": "_content/BackEnd",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "BackEnd\\wwwroot",
+      "Source": "BackEnd",
+      "ContentRoot": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\",
+      "BasePath": "_content/BackEnd",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\matbiec.jpg",
+      "SourceId": "BackEnd",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\",
+      "BasePath": "_content/BackEnd",
+      "RelativePath": "Images/matbiec.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\matbiec.jpg"
+    },
+    {
+      "Identity": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\nhagiakim.jpg",
+      "SourceId": "BackEnd",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\",
+      "BasePath": "_content/BackEnd",
+      "RelativePath": "Images/nhagiakim.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\nhagiakim.jpg"
+    },
+    {
+      "Identity": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\matbiec.pdf",
+      "SourceId": "BackEnd",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\",
+      "BasePath": "_content/BackEnd",
+      "RelativePath": "Pdfs/matbiec.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Pdfs\\matbiec.pdf"
+    },
+    {
+      "Identity": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\NhaGiaKim.pdf",
+      "SourceId": "BackEnd",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\",
+      "BasePath": "_content/BackEnd",
+      "RelativePath": "Pdfs/NhaGiaKim.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Pdfs\\NhaGiaKim.pdf"
+    }
+  ]
 }

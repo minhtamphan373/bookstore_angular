@@ -39,9 +39,9 @@ export class EditSachComponent implements OnInit {
       .subscribe((saches: Sach[]) => this.sachesUpdated.emit(saches));
   }
 
-  initNewSach() {
-    this.sachToEdit = new Sach();
-  }
+  // initNewSach() {
+  //   this.sachToEdit = new Sach();
+  // }
 
   selectFile(e: any) {
     this.sach.hinhAnh = e.target.files[0];

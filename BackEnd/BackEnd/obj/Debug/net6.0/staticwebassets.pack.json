@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\matbiec.jpg",
+      "PackagePath": "staticwebassets\\Images\\matbiec.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\nhagiakim.jpg",
+      "PackagePath": "staticwebassets\\Images\\nhagiakim.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\NhaGiaKim.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\NhaGiaKim.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\matbiec.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\matbiec.pdf"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.BackEnd.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.BackEnd.props",
+      "PackagePath": "build\\BackEnd.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.BackEnd.props",
+      "PackagePath": "buildMultiTargeting\\BackEnd.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.BackEnd.props",
+      "PackagePath": "buildTransitive\\BackEnd.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
