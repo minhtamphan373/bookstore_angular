@@ -16,15 +16,16 @@ namespace BackEnd.Models
         {
         }
 
-        public virtual DbSet<Sach> Saches { get; set; } = null!;
-        public virtual DbSet<TheLoai> TheLoais { get; set; } = null!;
+        public virtual DbSet<Sach> Saches { get; set; }
+        public virtual DbSet<TheLoai> TheLoais { get; set; }
+        public virtual DbSet<User> Users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Source=LAPTOP-AD60VGJJ\\SQLEXPRESS;Initial Catalog=BOOKSTORE;Integrated Security=True");
+                optionsBuilder.UseSqlServer("Data Source=LAPTOP-AD60VGJJ\\SQLEXPRESS;Initial Catalog=BOOKSTORE;Integrated Security=True");
             }
         }
 
@@ -34,11 +35,13 @@ namespace BackEnd.Models
             {
                 entity.ToTable("Sach");
 
-                entity.Property(e => e.HinhAnh).HasMaxLength(50);
+                entity.Property(e => e.HinhAnh).HasMaxLength(200);
 
-                entity.Property(e => e.PdfFile).HasMaxLength(100);
+                entity.Property(e => e.PdfFile).HasMaxLength(500);
 
-              entity.Property(e => e.TacGia).HasMaxLength(50);
+                entity.Property(e => e.TacGia).HasMaxLength(100);
+
+                entity.Property(e => e.TenSach).HasMaxLength(200);
             });
 
             modelBuilder.Entity<TheLoai>(entity =>
@@ -47,10 +50,15 @@ namespace BackEnd.Models
 
                 entity.Property(e => e.Id).ValueGeneratedNever();
 
-                entity.Property(e => e.TenTheLoai)
+                entity.Property(e => e.TheLoai1)
                     .HasMaxLength(150)
                     .HasColumnName("TheLoai");
             });
+
+      modelBuilder.Entity<User>(entity =>
+      {
+        entity.ToTable("Users");
+      });
 
             OnModelCreatingPartial(modelBuilder);
         }

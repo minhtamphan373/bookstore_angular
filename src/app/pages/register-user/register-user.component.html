@@ -1,77 +1,77 @@
 
 <div class="register-page">
-    <mat-card class="mat-elevation-z12">
-      <mat-card-title style="text-align:center;position:relative;top: 2rem;">ĐĂNG KÝ</mat-card-title>     
-            <mat-card-content>
-              <form [formGroup]="registerForm" #formDirective="ngForm" 
-              (ngSubmit)="submitForm()">
-                <!--name-->
-                <mat-form-field class="example-full-width">
-                  <mat-label>Tên đăng nhập</mat-label>
-                  <input type="email" matInput formControlName="username" placeholder="">
-                  <mat-error *ngIf="this.registerForm.get('username')?.touched && !this.registerForm.get('username')?.hasError('required')">
-                    Tên đăng nhập không hợp lệ
-                  </mat-error>
-                  <mat-error *ngIf="this.registerForm.get('username')?.hasError('required')">
-                    Tên đăng nhập là <strong>bắt buộc</strong>
-                  </mat-error>
-                  <mat-icon matIconPrefix>person</mat-icon>
-                </mat-form-field>                
+  <mat-card class="mat-elevation-z12">
+    <mat-card-title style="text-align:center;position:relative;top: 2rem;">ĐĂNG KÝ</mat-card-title>     
+          <mat-card-content>
+            <form [formGroup]="registerForm" #formDirective="ngForm" 
+            (ngSubmit)="submitForm()">
+              <!--name-->
+              <mat-form-field class="example-full-width">
+                <mat-label>Tên đăng nhập</mat-label>
+                <input type="username" matInput formControlName="username" placeholder="">
+                <mat-error *ngIf="this.registerForm.get('username')?.touched && !this.registerForm.get('username')?.hasError('required')">
+                  Tên đăng nhập không hợp lệ
+                </mat-error>
+                <mat-error *ngIf="this.registerForm.get('username')?.hasError('required')">
+                  Tên đăng nhập là <strong>bắt buộc</strong>
+                </mat-error>
+                <mat-icon matIconPrefix>person</mat-icon>
+              </mat-form-field>                
 
-                <!--email-->
-                <mat-form-field class="example-full-width">
-                  <mat-label>Email</mat-label>
-                  <input type="email" matInput formControlName="email" placeholder="Ex. pat@example.com">
-                  <mat-error *ngIf="this.registerForm.get('email')?.touched && !this.registerForm.get('email')?.hasError('required')">
-                    Nhập địa chỉ Email hợp lệ
-                  </mat-error>
-                  <mat-error *ngIf="this.registerForm.get('email')?.hasError('required')">
-                    Email là <strong>bắt buộc</strong>
-                  </mat-error>
-                  <mat-icon matIconPrefix>email</mat-icon>
-                </mat-form-field>
+              <!--email-->
+              <mat-form-field class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input type="email" matInput formControlName="email" placeholder="Ex. pat@example.com">
+                <mat-error *ngIf="this.registerForm.get('email')?.touched && !this.registerForm.get('email')?.hasError('required')">
+                  Nhập địa chỉ Email hợp lệ
+                </mat-error>
+                <mat-error *ngIf="this.registerForm.get('email')?.hasError('required')">
+                  Email là <strong>bắt buộc</strong>
+                </mat-error>
+                <mat-icon matIconPrefix>email</mat-icon>
+              </mat-form-field>
 
-                <!--password-->
-                <mat-form-field class="example-full-width">
-                  <mat-label>Password</mat-label>
-                  <input type="password" matInput formControlName="password" placeholder="">
-                  <mat-error  *ngIf="this.registerForm.get('password')?.touched && !this.registerForm.get('password')?.hasError('required') && this.registerForm.get('password')?.hasError('minlength')">
-                    Tối thiểu <strong>6 ký tự</strong>
-                  </mat-error>
-                  <mat-error *ngIf="this.registerForm.get('password')?.hasError('required')">
-                    Password là <strong>bắt buộc</strong>
-                  </mat-error>
-                  <mat-icon matIconPrefix>lock</mat-icon>
-                </mat-form-field>
-                <!---->                                                                   
+              <!--password-->
+              <mat-form-field class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput formControlName="password" placeholder="">
+                <mat-error  *ngIf="this.registerForm.get('password')?.touched && !this.registerForm.get('password')?.hasError('required') && this.registerForm.get('password')?.hasError('minlength')">
+                  Tối thiểu <strong>6 ký tự</strong>
+                </mat-error>
+                <mat-error *ngIf="this.registerForm.get('password')?.hasError('required')">
+                  Password là <strong>bắt buộc</strong>
+                </mat-error>
+                <mat-icon matIconPrefix>lock</mat-icon>
+              </mat-form-field>
+              <!---->                                                                   
 
-                <!--Password Confirmation-->    
-                <mat-form-field class="example-full-width">
-                  <mat-label>Password Confirmation</mat-label>
-                  <input type="password" matInput formControlName="cpassword" placeholder="">
-                  <mat-error  *ngIf="this.registerForm.get('cpassword')?.touched && !this.registerForm.get('cpassword')?.hasError('required') && this.registerForm.get('password')?.hasError('minlength')">
-                    Tối thiểu <strong>6 ký tự</strong>
-                  </mat-error>
-                  <mat-error *ngIf="this.registerForm.get('cpassword')?.hasError('required')">
-                    Password Confirmation là <strong>bắt buộc</strong>
-                  </mat-error>
-                  <mat-icon matIconPrefix>lock</mat-icon>
-                </mat-form-field>             
+              <!--Password Confirmation-->    
+              <mat-form-field class="example-full-width">
+                <mat-label>Password Confirmation</mat-label>
+                <input type="password" matInput formControlName="cpassword" placeholder="">
+                <mat-error  *ngIf="this.registerForm.get('cpassword')?.touched && !this.registerForm.get('cpassword')?.hasError('required') && this.registerForm.get('password')?.hasError('minlength')">
+                  Tối thiểu <strong>6 ký tự</strong>
+                </mat-error>
+                <mat-error *ngIf="this.registerForm.get('cpassword')?.hasError('required')">
+                  Password Confirmation là <strong>bắt buộc</strong>
+                </mat-error>
+                <mat-icon matIconPrefix>lock</mat-icon>
+              </mat-form-field>             
 
-                <mat-error
-                  *ngIf="this.registerForm.get('cpassword')?.dirty && this.registerForm.hasError('passwordsNotMatching')">
-                 Password không khớp!
-                </mat-error>                
-              
-                <!--register-button-->            
-                <button
-                  mat-button
-                  [attr.aria-label]="'register'"
-                  class="register-button">
-                  ĐĂNG KÝ
-                </button>
-              </form>
-              <p>Bạn đã có tài khoản?&nbsp;<span><a routerLink="/login-user">Đăng nhập ngay!</a></span></p>
-            </mat-card-content>
-    </mat-card>
+              <mat-error
+                *ngIf="this.registerForm.get('cpassword')?.dirty && this.registerForm.hasError('passwordsNotMatching')">
+               Password không khớp!
+              </mat-error>                
+            
+              <!--register-button-->            
+              <button
+                mat-button
+                [attr.aria-label]="'register'"
+                class="register-button">
+                ĐĂNG KÝ
+              </button>
+            </form>
+            <p>Bạn đã có tài khoản?&nbsp;<span><a routerLink="/login-user">Đăng nhập ngay!</a></span></p>
+          </mat-card-content>
+  </mat-card>
 </div>

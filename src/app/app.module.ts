@@ -35,6 +35,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { EditSachComponent } from './components/edit-sach/edit-sach.component';
 import { MatMenuModule} from '@angular/material/menu';
 import { BookDetailsComponent } from './pages/book-details/book-details.component';
+import { NgToastModule } from 'ng-angular-popup';
 
 
 @NgModule({
@@ -75,6 +76,7 @@ import { BookDetailsComponent } from './pages/book-details/book-details.componen
     HttpClientModule,
     FormsModule,
     MatMenuModule,
+    NgToastModule,
   ],
   providers: [
     ServerService,
