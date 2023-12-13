@@ -59,7 +59,6 @@ export class LoginUserComponent {
 import { Router } from '@angular/router';
 import { FormGroup,FormBuilder,FormControl, Validators } from '@angular/forms';
 import { Component } from '@angular/core';
-import { User } from 'src/app/models/User';
 import { AuthService } from 'src/app/services/auth.service';
 import { NgToastService } from 'ng-angular-popup';
 import ValidateForm from 'src/app/helpers/validateform';
@@ -97,7 +96,7 @@ export class LoginUserComponent {
           this.auth.storeToken(result.token);
           alert(result.message);
           this.toast.success({detail:"SUCCESS", summary:result.message, duration: 5000})
-          this.router.navigate(['home']);
+          this.router.navigate(['pages/home']);
         },
         error: (err) =>{
           this.toast.error({detail:"ERROR", summary:"Something when wrong!", duration: 5000});

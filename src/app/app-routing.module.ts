@@ -1,38 +1,27 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { LoginUserComponent } from './pages/login-user/login-user.component';
-import { RegisterUserComponent } from './pages/register-user/register-user.component';
-import { ContactComponent } from './pages/contact/contact.component';
-import { AboutComponent } from './pages/about/about.component';
-import { LibraryComponent } from './pages/library/library.component';
-import { EditSachComponent } from './components/edit-sach/edit-sach.component';
-import { BookDetailsComponent } from './pages/book-details/book-details.component';
-
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
+import { AdminRoutingModule } from './adminpanel/admin-routing.module';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
   {
-    path: 'home',
-    component: HomeComponent,
-    pathMatch: 'full'
+    path: 'pages',
+    loadChildren: () => import('./pages/pages.module')
+      .then(m => m.PagesModule),
   },
-  {path: 'login-user', component: LoginUserComponent},
-  {path: 'register-user', component: RegisterUserComponent},
-  {path: 'contact', component: ContactComponent},
-  {path: 'about', component: AboutComponent},
-  {path: 'library', component: LibraryComponent},
-  {path: 'editsach', component: EditSachComponent},
-  {
-    path: 'bookdetail/:sachId',
-     component: BookDetailsComponent
-    },
+  { path: '', redirectTo: 'pages/home', pathMatch: 'full' },
+  { path: '**', redirectTo: 'pages/home' },
+    
 
+  {
+    path: 'adminpanel',
+    loadChildren: () => import('./adminpanel/admin.module')
+      .then(m => m.AdminModule),
+  }, 
 
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes), AdminRoutingModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

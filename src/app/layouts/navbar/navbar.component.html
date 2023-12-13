@@ -2,12 +2,11 @@
     <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>menu</mat-icon>
     </button> -->
-    <a href="#" class="site-logo"><span>BOOKWORM</span></a>
-    
-    <button mat-button routerLink="/home" class="btn-title">trang chủ</button>
-    <button mat-button routerLink="/contact" class="btn-title">liên hệ</button>
+    <a href="/pages/home" class="site-logo"><span>BOOKWORM</span></a>
+    <button mat-button routerLink="/pages/home" routerLinkActive="active" class="btn-title">trang chủ</button>
+    <button mat-button routerLink="/pages/contact" routerLinkActive="active" class="btn-title">liên hệ</button>
     <!-- <button mat-button routerLink="/listsach" class="btn-title">thư viện</button> -->
-    <button mat-button routerLink="/library" class="btn-title">quản lý sách</button>
+    <button mat-button routerLink="/pages/library" routerLinkActive="active" class="btn-title">quản lý sách</button>  
 
     <!-- <button mat-button [matMenuTriggerFor]="menu" routerLink="/library" class="btn-title">thư viện <i class="fa-solid fa-caret-down"></i></button>
       <mat-menu #menu="matMenu">
@@ -25,8 +24,8 @@
     <button mat-icon-button class="example-icon favorite-icon">
       <mat-icon>favorite</mat-icon>
     </button>
-    <button mat-button [routerLink]="['/login-user']">ĐĂNG NHẬP</button>
-    <button mat-button routerLink="/register-user">ĐĂNG KÝ</button>
+    <button mat-button routerLink="/pages/login-user" routerLinkActive="active" class="btn-title">ĐĂNG NHẬP</button>
+    <button mat-button routerLink="/pages/register-user" routerLinkActive="active" class="btn-title">ĐĂNG KÝ</button>
     <button mat-icon-button class="example-icon">
       <mat-icon>share</mat-icon>
     </button>

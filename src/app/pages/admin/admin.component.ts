@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild} from '@angular/core';
+import { MatMenuTrigger } from '@angular/material/menu';
+
 
 @Component({
   selector: 'app-admin',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./admin.component.css']
 })
 export class AdminComponent {
+  @ViewChild(MatMenuTrigger) trigger: MatMenuTrigger;
 
+  someMethod() {
+    this.trigger.openMenu();
+  }
 }

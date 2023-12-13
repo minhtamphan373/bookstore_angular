@@ -1,0 +1,53 @@
+<div class="card">
+    <div class="card-body">
+        <!-- title -->
+                <h4 class="card-title">Tất cả sách</h4>                            
+        <!-- title -->
+        <div class="table-responsive">
+            <table class="table align-middle">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th class="th-title">Mã sách</th>
+                        <th class="th-title">Tên sách</th>
+                        <th class="th-title">Số trang</th>
+                        <th class="th-title">Tóm tắt</th>
+                        <th class="th-title">Thể loại</th>                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let sach of saches'>
+                        <td>
+                            <input type="checkbox" name="" id="" class="check">
+                        </td>
+                        <td>
+                            <h5 class="book-ps">{{sach.id}}</h5>
+                        </td>
+                        <td>
+                            <div class="book-content">
+                                <img [src]=sach.hinhAnh alt="user" width="90" >
+                                <div class="ms-3">
+                                    <h4 class="book-name">{{sach.tenSach}}</h4>
+                                    <span class="book-auth">{{sach.tacGia}}</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="book-ps">{{sach.soTrang}}</td>                                           
+                        <td>
+                            <h5 class="book-sm">{{sach.tomTat}}</h5>
+                        </td>
+                        <td>
+                            <h5 class="book-ps">{{sach.idTheLoai}}</h5>
+                        </td>                        
+                    </tr>              
+                </tbody>
+            </table>
+        </div>
+    </div>    
+</div>
+
+<div class="button-right">
+    <button type="button" class="btn btn-outline-success">Thêm sách</button>
+    <button type="button" class="btn btn-outline-success">Xóa sách</button>
+    <button type="button" class="btn btn-outline-success">Sửa sách</button>
+</div>

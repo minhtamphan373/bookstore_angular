@@ -197,7 +197,7 @@ export class RegisterUserComponent {
         next:(result) =>{
           alert(result.message);
           this.registerForm.reset();
-          this.router.navigate(['login-user']);
+          this.router.navigate(['/pages/login-user']);
         },
         error:(err) =>{
           alert(err?.error.message)

@@ -16,7 +16,10 @@
     font-size: 30px;
     font-style: bold;
 }
-
+.btn-title:hover{
+    background-color: #5ba0e4;
+    color: black;
+}
 .btn-title,
 .sub-btn-title {
     background-color: var(--navbar-color);
@@ -57,4 +60,15 @@
      max-height: 100px;
      background-color: var(--navbar-color);
      color: var(--nav-footer-text-color);
+}
+
+.active{
+    background-color: var(--navbar-color);
+}
+.active:hover{
+    background-color: #5ba0e4;
+    color: black;
+}
+.active:focus{
+    color: black;
 }

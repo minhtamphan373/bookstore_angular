@@ -4,7 +4,7 @@
 
         <div *ngFor="let sach of saches" class="col-lg-3 mt-3 mb-3">            
             <div class="box">   
-                <a routerLink="/bookdetail/{{sach.id}}"><img src="{{sach.hinhAnh}}" width="100%" alt=""></a>                                           
+                <a routerLink="/pages/bookdetail/{{sach.id}}"><img src="{{sach.hinhAnh}}" width="100%" alt=""></a>                                           
                 <h3 class="mt-2 mb-2">{{sach.tenSach}}</h3>
                 <h4>Tác giả: {{sach.tacGia}}</h4> 
                 <a target="_blank" href="{{sach.pdfFile}}" title="{{sach.tenSach}}">

@@ -25,10 +25,10 @@ namespace BackEnd.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TheLoai>>> GetTheLoais()
         {
-          if (_context.TheLoais == null)
-          {
-              return NotFound();
-          }
+        if (_context.TheLoais == null)
+        {
+            return NotFound();
+        }
             return await _context.TheLoais.ToListAsync();
         }
 

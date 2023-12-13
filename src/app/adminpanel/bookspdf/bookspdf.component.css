@@ -1,0 +1,57 @@
+.card{
+    margin: 2rem .2rem 1.3rem -1rem;
+}
+.card-title{
+    font-weight: bolder;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.th-title{
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: baseline;
+    font-weight: 800;    
+}
+.book-name .book-auth{
+    font-size: medium;
+
+}
+.book-sm{
+    margin-left: 20px;
+    overflow: hidden;
+    width: 500px;
+    font-size: medium;
+}
+.book-content{
+    display: flex;
+    font-size: medium;
+    align-items: center;
+}
+.book-ps{
+    font-size: medium;
+    text-align: center;
+}
+
+.button-right{
+    position: relative;
+    right: auto;
+    margin: 5px 10px 15px 0;
+    text-align: right;
+}
+.button-right .btn.btn-outline-success{
+    text-transform: uppercase;
+    margin-right: 10px;
+    color: #6200ee;
+    border-color: #6200ee;
+}
+.button-right .btn.btn-outline-success:hover{
+    color: #fff;
+    background: #6200ee;
+}
+.check{
+    font-size: 10px;
+}
+/* .btn.btn-outline-success:focus{
+    background: #6200ee;
+} */

@@ -1,0 +1,40 @@
+<div class="admin-navbar">
+    <div class="admin-top">
+        <mat-icon>notifications_none</mat-icon>
+    </div>
+    <div class="admin">
+        <!-- <img src="" alt=""> -->
+        <h4 class="name">Admin</h4>
+        <p class="mail">admin@gmail.com</p>
+    </div>
+    <div class="admin-menu">
+        <div class="menu-head">
+            <span>Quản lý</span>
+        </div>
+        <div class="menu-item">
+            <button mat-button class="menu-button" routerLink="/adminpanel/statistical" routerLinkActive="active">
+                <mat-icon>dashboards</mat-icon>
+                <span>Thống kê</span>                      
+            </button>
+            <button mat-button class="menu-button" routerLink="/adminpanel/bookspdf" routerLinkActive="active">                
+                <mat-icon>pages</mat-icon> 
+                <span>Sách pdf</span>              
+            </button>
+            <button mat-button class="menu-button" routerLink="/adminpanel/categories" routerLinkActive="active">                
+                <mat-icon>pages</mat-icon> 
+                <span>Thể loại</span>              
+            </button>
+            <button mat-button class="menu-button" routerLink="/adminpanel/accounts" routerLinkActive="active">
+                <mat-icon>account_box</mat-icon> 
+                <span>Tài khoản</span>             
+            </button>
+            <button mat-button class="menu-button" routerLink="/adminpanel/comments" routerLinkActive="active">
+                <mat-icon>comments</mat-icon>  
+                <span>Bình luận</span>              
+            </button>
+            <!-- <button mat-button class="menu-button">
+                <mat-icon>settings</mat-icon>                
+            </button> -->
+        </div>
+    </div>
+</div>
