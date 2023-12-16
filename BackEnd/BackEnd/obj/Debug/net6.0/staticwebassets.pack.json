@@ -1,12 +1,20 @@
 {
   "Files": [
     {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\anhluatrongtrotan.jpg",
+      "PackagePath": "staticwebassets\\Images\\anhluatrongtrotan.jpg"
+    },
+    {
       "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\matbiec.jpg",
       "PackagePath": "staticwebassets\\Images\\matbiec.jpg"
     },
     {
       "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\nhagiakim.jpg",
       "PackagePath": "staticwebassets\\Images\\nhagiakim.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\10337-khu-vuon-ngon-tu-thuviensach.vn.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\10337-khu-vuon-ngon-tu-thuviensach.vn.pdf"
     },
     {
       "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\NhaGiaKim.pdf",

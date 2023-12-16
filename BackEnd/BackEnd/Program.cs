@@ -26,9 +26,10 @@ builder.Services.AddAuthentication(x =>
   x.TokenValidationParameters = new TokenValidationParameters
   {
     ValidateIssuerSigningKey = true,
-    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("verysecret")),
+    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("verysecret...............")),
     ValidateAudience = false,
-    ValidateIssuer = false
+    ValidateIssuer = false,
+    ClockSkew = TimeSpan.Zero
   };
 });
 

@@ -4,14 +4,17 @@
     </div>
     <div class="admin">
         <!-- <img src="" alt=""> -->
-        <h4 class="name">Admin</h4>
-        <p class="mail">admin@gmail.com</p>
+        <h4 class="name">Welcome {{name}}</h4>
     </div>
     <div class="admin-menu">
         <div class="menu-head">
             <span>Quản lý</span>
         </div>
         <div class="menu-item">
+            <button mat-button class="menu-button" routerLink="/pages/home" routerLinkActive="active">
+                <mat-icon>dashboards</mat-icon>
+                <span>Trang chủ</span>                      
+            </button>
             <button mat-button class="menu-button" routerLink="/adminpanel/statistical" routerLinkActive="active">
                 <mat-icon>dashboards</mat-icon>
                 <span>Thống kê</span>                      

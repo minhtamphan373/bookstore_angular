@@ -1,4 +1,7 @@
 import { Component, OnInit} from '@angular/core';
+import { ApiService } from 'src/app/services/api.service';
+import { AuthService } from 'src/app/services/auth.service';
+import { UserStoreService } from 'src/app/services/user-store.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,4 +10,31 @@ import { Component, OnInit} from '@angular/core';
 })
 export class NavbarComponent  {
   panelOpenState = false;
+  public users: any = [];
+  public name: string = "";
+  public role!: string;
+  constructor(private api: ApiService, private auth: AuthService, private userStore: UserStoreService){ }
+  ngOnInit() {
+      this.userStore.getNameFromStore()
+      .subscribe(value => {
+        const nameFromToken = this.auth.getNameFromToken();
+        this.name = value || nameFromToken
+      });
+
+      this.userStore.getRoleFromStore()
+      .subscribe(value => {
+        const roleFromToken = this.auth.getRoleFromToken();
+        this.role = value || roleFromToken
+      })
+  }
+  loggedIn(){
+    this.auth.isLoggedIn();
+ 
+  }
+  logout(){
+    this.auth.logout();
+    this.name ='';
+    this.role = '';
+    window.location.reload();
+  }
 }

@@ -11,6 +11,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System;
 using System.Security.Claims;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BackEnd.Controllers
 {
@@ -25,11 +26,7 @@ namespace BackEnd.Controllers
       _context = context;
     }
 
-    [HttpGet]
-    public async Task<ActionResult<IEnumerable<User>>> GetUsers()
-    {
-      return await _context.Users.ToListAsync();
-    }
+  
 
     [HttpPost("login")]
     public async Task<IActionResult> Login([FromBody] User userObj)
@@ -39,7 +36,8 @@ namespace BackEnd.Controllers
         return BadRequest();
       }
 
-      var user = await _context.Users.FirstOrDefaultAsync(x => x.Email == userObj.Email);
+      var user = await _context.Users
+        .FirstOrDefaultAsync(x => x.Email == userObj.Email);
       if (user == null)
       {
         return NotFound(new { Message = "User Not Found" });
@@ -158,6 +156,13 @@ namespace BackEnd.Controllers
 
       var token = jwtTokenHandler.CreateToken(tokenDescriptor);
       return jwtTokenHandler.WriteToken(token);
+    }
+
+    [Authorize]
+    [HttpGet]
+    public async Task<ActionResult<User>> GetUsers()
+    {
+      return Ok(await _context.Users.ToListAsync());
     }
   }
 

@@ -6,7 +6,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { AdminComponent } from './admin.component';
 import { ServerService } from '../services/server.services';
 import { AuthService } from '../services/auth.service';
@@ -18,6 +18,8 @@ import { BookspdfComponent } from './bookspdf/bookspdf.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { CommentsComponent } from './comments/comments.component';
 import { StatisticalComponent } from './statistical/statistical.component';
+import { TokenInterceptor } from '../interceptors/token.interceptor';
+import { NgToastModule } from 'ng-angular-popup';
 
 @NgModule({
     declarations: [
@@ -38,12 +40,18 @@ import { StatisticalComponent } from './statistical/statistical.component';
         MatToolbarModule,
         MatCardModule,
         HttpClientModule,
+        NgToastModule,
     ],
     providers: [
         ServerService,
         AuthService,
         SachService,
         TheLoaiService,
+        {
+            provide: HTTP_INTERCEPTORS,
+            useClass: TokenInterceptor,
+            multi: true,
+        }
     ],
 })
 export class AdminModule { }

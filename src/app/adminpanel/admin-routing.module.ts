@@ -6,8 +6,9 @@ import { StatisticalComponent } from './statistical/statistical.component';
 import { AccountsComponent } from './accounts/accounts.component';
 import { CommentsComponent } from './comments/comments.component';
 import { BookspdfComponent } from './bookspdf/bookspdf.component';
+import { AuthGuard } from '../guards/auth.guard';
 const routes: Routes = [{
-  path: 'adminpanel', component: AdminComponent,
+  path: 'adminpanel', component: AdminComponent, canActivate: [AuthGuard],
   children:[
     {path: 'statistical', component: StatisticalComponent},
     {path: 'bookspdf', component: BookspdfComponent},
@@ -16,7 +17,7 @@ const routes: Routes = [{
     {path: 'comments', component: CommentsComponent},
     {
       path: '',
-      redirectTo: 'statistical',
+      redirectTo: 'adminpanel',
       pathMatch: 'full',
     },
   ],

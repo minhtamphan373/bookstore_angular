@@ -29,11 +29,14 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatChipsModule } from '@angular/material/chips';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { MatMenuModule } from '@angular/material/menu';
 import { NavbarComponent } from '../layouts/navbar/navbar.component';
 import { FooterComponent } from '../layouts/footer/footer.component';
 import { ImageSliderComponent } from './home/imageSlider/components/imageSlider.component';
+import { AuthGuard } from '../guards/auth.guard';
+import { TokenInterceptor } from '../interceptors/token.interceptor';
+import { NgToastModule } from 'ng-angular-popup';
 
 @NgModule({
   imports: [
@@ -58,6 +61,7 @@ import { ImageSliderComponent } from './home/imageSlider/components/imageSlider.
     RouterModule,
     HttpClientModule,
     MatMenuModule,
+    NgToastModule,
 
   ],
   declarations: [
@@ -79,6 +83,12 @@ import { ImageSliderComponent } from './home/imageSlider/components/imageSlider.
     SachService,
     TheLoaiService,
     AuthService,
+    AuthGuard,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptor,
+      multi: true,
+    }
   ],
 })
 export class PagesModule {

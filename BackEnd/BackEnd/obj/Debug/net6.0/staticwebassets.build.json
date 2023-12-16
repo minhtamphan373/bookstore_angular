@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GgkJHtby5140gPvTs+isL8yZh/Zn0guRUb/GMGkTb7w=",
+  "Hash": "20fc94usGTJY1j8X0ulobXtGmSoq1TtF2u5c823cQP4=",
   "Source": "BackEnd",
   "BasePath": "_content/BackEnd",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\anhluatrongtrotan.jpg",
+      "SourceId": "BackEnd",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\",
+      "BasePath": "_content/BackEnd",
+      "RelativePath": "Images/anhluatrongtrotan.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\anhluatrongtrotan.jpg"
+    },
     {
       "Identity": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\matbiec.jpg",
       "SourceId": "BackEnd",
@@ -49,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\nhagiakim.jpg"
+    },
+    {
+      "Identity": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\10337-khu-vuon-ngon-tu-thuviensach.vn.pdf",
+      "SourceId": "BackEnd",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\",
+      "BasePath": "_content/BackEnd",
+      "RelativePath": "Pdfs/10337-khu-vuon-ngon-tu-thuviensach.vn.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Pdfs\\10337-khu-vuon-ngon-tu-thuviensach.vn.pdf"
     },
     {
       "Identity": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\matbiec.pdf",

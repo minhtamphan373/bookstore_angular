@@ -8,6 +8,7 @@ import { BookDetailsComponent } from './book-details/book-details.component';
 import { HomeComponent } from './home/home.component';
 import { PagesComponent } from './pages.component';
 import { LibraryComponent } from './library/library.component';
+import { AuthGuard } from '../guards/auth.guard';
 
 
 const routes: Routes = [{

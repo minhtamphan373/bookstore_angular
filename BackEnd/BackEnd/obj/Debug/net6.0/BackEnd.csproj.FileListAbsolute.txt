@@ -283,3 +283,5 @@ D:\UNIVER3\Công nghệ WEB\DoAn\bookstoreAngular\BackEnd\BackEnd\bin\Debug\net6
 D:\UNIVER3\Công nghệ WEB\DoAn\bookstoreAngular\BackEnd\BackEnd\bin\Debug\net6.0\Scrutor.dll
 D:\UNIVER3\Công nghệ WEB\DoAn\bookstoreAngular\BackEnd\BackEnd\bin\Debug\net6.0\Swashbuckle.AspNetCore.Annotations.dll
 D:\UNIVER3\Công nghệ WEB\DoAn\bookstoreAngular\BackEnd\BackEnd\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
+D:\UNIVER3\Công nghệ WEB\DoAn\bookstoreAngular\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.RazorAssemblyInfo.cache
+D:\UNIVER3\Công nghệ WEB\DoAn\bookstoreAngular\BackEnd\BackEnd\obj\Debug\net6.0\BackEnd.RazorAssemblyInfo.cs

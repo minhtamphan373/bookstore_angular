@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Sach } from '../models/Sach';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, pipe } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 
 
@@ -53,5 +54,12 @@ export class SachService {
   public getSachTheLoai(theLoaiID: string): Observable<Sach[]> {
     return this.http.get<Sach[]>(`${environment.apiUrl}/${this.url}/${theLoaiID}`);
   }
+  public getTotal(): Observable<number> {
+    return this.http.get<number>(`${environment.apiUrl}/${this.url}/totalSachs`);
+  }
   
+  public getPdf(id:string){
+    return this.http.get(`${environment.apiUrl}/${this.url}/download-pdf/${id}`,
+    {observe: 'response',responseType:'blob'})
+  }  
 }
