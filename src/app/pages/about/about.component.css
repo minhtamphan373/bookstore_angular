@@ -1,0 +1,46 @@
+.container{
+    display: inline-block;
+    position: relative;
+    top: 5rem;
+    left: 3rem;
+    right: 0;
+}
+.about-title{
+    position: relative;
+    top: 5rem;
+    .title{
+        text-transform: uppercase;
+    }
+    .content-intro{
+        font-size: 18px;
+    }
+}
+.row .col-lg-8.col-md-10{
+    align-items: right;
+    .about-img{
+        margin-top: 2rem;
+        width: 100%;
+        text-align: right;
+        img{
+            width: 100%;
+            margin-bottom: 2rem;
+            float: right;
+            margin-left: auto;
+        }    
+    }
+}
+
+.row .title-i{
+    position: relative;
+    top: 2rem;
+    text-transform: uppercase;
+    font-size: 30px;
+    text-align: center;
+}
+.row .card{
+    margin: 2rem auto 2rem 2rem;
+}
+.card-img-top.img-responsive{
+    width: 228px;
+    height: 100px;
+}

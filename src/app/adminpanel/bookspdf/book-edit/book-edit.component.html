@@ -1,0 +1,67 @@
+<div class="card">
+    <div class="card-body">
+        <!-- title -->
+            <h4 class="card-title">Thông tin sách</h4>                            
+        <!-- title -->
+       <div class="form-responsive">    
+            <div *ngIf="sach">                
+                <div class="form-edit">
+                    <div class="editsach-title">
+                        <label class="title-edit">Mã sách</label>
+                        <input [(ngModel)]="sach.id" readonly class="input-info"/>
+                    </div>
+                    <div class="editsach-title">
+                        <label class="title-edit">Tên sách</label>
+                        <input [(ngModel)]="sach.tenSach" placeholder="TenSach" class="input-info"/>
+                    </div>
+                    <div class="editsach-title">
+                        <label class="title-edit">Tác giả</label>
+                        <input [(ngModel)]="sach.tacGia" placeholder="TacGia" class="input-info"/>
+                    </div>        
+                    <div class="editsach-title">
+                        <label class="title-edit">Số trang</label>
+                        <input [(ngModel)]="sach.soTrang" placeholder="SoTrang" class="input-info"/>
+                    </div>
+                    <!-- <div class="editsach-title">
+                        <label class="title-edit">Hình ảnh</label>
+                        <input type="file" (change)="selectFile($event)" class="input-info"/>
+                    </div> -->
+                    <div class="editsach-title">
+                        <label class="title-edit">Tóm tắt</label>
+                        <div>
+                            <textarea rows="10" [(ngModel)]="sach.tomTat" placeholder="Tom tat " class="input-info"></textarea>
+                        </div>
+                    </div>
+                    <!-- <div class="editsach-title">
+                        <label class="title-edit">File pdf</label>
+                        <input type="file" (change)="selectFile($event)" class="input-info"/>
+                    </div> -->
+                    <div class="editsach-title">
+                        <label class="title-edit">Thể loại</label>
+                        <input [(ngModel)]="sach.idTheLoai" placeholder="TheLoai" class="input-info"/> 
+                        <!-- <select name="idTheLoai" id="">
+                            <option value="">{{theloai.tenTheLoai}}</option>
+                        </select> -->
+                    </div>
+            
+                    <div class="button-right">
+                        <button type="submit" class="btn btn-outline-success" (click)="updateSach(sach)">Cập nhật</button>                        
+                    </div>
+                </div>  
+            </div>     
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+

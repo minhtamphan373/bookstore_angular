@@ -7,19 +7,16 @@
             <table class="table align-middle">
                 <thead>
                     <tr>
-                        <th></th>
                         <th class="th-title">Mã sách</th>
                         <th class="th-title">Tên sách</th>
                         <th class="th-title">Số trang</th>
                         <th class="th-title">Tóm tắt</th>
-                        <th class="th-title">Thể loại</th>                        
+                        <th class="th-title">Thể loại</th>  
+                        <th></th>                      
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor='let sach of saches'>
-                        <td>
-                            <input type="checkbox" name="" id="" class="check">
-                        </td>
+                    <tr *ngFor='let sach of saches | paginate: { itemsPerPage: itemPerPage, currentPage: p }'>                        
                         <td>
                             <h5 class="book-ps">{{sach.id}}</h5>
                         </td>
@@ -38,16 +35,23 @@
                         </td>
                         <td>
                             <h5 class="book-ps">{{sach.idTheLoai}}</h5>
+                        </td> 
+                        <td>
+                            <div class="button-right">
+                                <button type="button" class="btn btn-outline-success" (click)="editSach(sach)">Sửa</button>
+                                <button type="button" class="btn btn-outline-success" (click)="deleteSach(sach.id)">Xóa</button>
+                            </div>
                         </td>                        
-                    </tr>              
-                </tbody>
+                    </tr>                                  
+                </tbody>                
             </table>
+            <div class="pagess">
+                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+            </div>
         </div>
     </div>    
 </div>
 
 <div class="button-right">
-    <button type="button" class="btn btn-outline-success">Thêm sách</button>
-    <button type="button" class="btn btn-outline-success">Xóa sách</button>
-    <button type="button" class="btn btn-outline-success">Sửa sách</button>
+    <button type="button" class="btn btn-outline-success" (click)="initNewSach()">Thêm sách</button>
 </div>

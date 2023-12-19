@@ -1,1 +1,100 @@
-<p>statistical works!</p>
+
+<div class="col-xxl-5">
+    <div class="row">
+      <div class="col-md-6">
+        <mat-card class="statistical-card">
+            <mat-card-header>
+              <mat-card-title-group>
+                    <mat-card-title class="title">Tổng sách</mat-card-title>
+                    <mat-card-subtitle class="sub-title">
+                        <span>{{totalSach}}</span>
+                    </mat-card-subtitle>
+                    <div class="icon-container">
+                        <mat-icon>collections_bookmark</mat-icon>
+                    </div>                           
+              </mat-card-title-group>
+            </mat-card-header>            
+        </mat-card>
+      </div>
+      <div class="col-md-6">
+        <mat-card class="statistical-card">
+            <mat-card-header>
+              <mat-card-title-group>
+                    <mat-card-title class="title">Tổng thể loại</mat-card-title>
+                    <mat-card-subtitle class="sub-title">
+                        <span>{{totalTheLoai}}</span>
+                    </mat-card-subtitle>
+                    <div class="icon-container">
+                        <mat-icon>archive</mat-icon>
+                    </div>                           
+              </mat-card-title-group>
+            </mat-card-header>            
+        </mat-card>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+          <mat-card class="statistical-card">
+              <mat-card-header>
+                <mat-card-title-group>
+                    <mat-card-title class="title">Tổng tài khoản</mat-card-title>
+                    <mat-card-subtitle class="sub-title">
+                        <span>{{totalAccount}}</span>
+                    </mat-card-subtitle>
+                    <div class="icon-container">
+                        <mat-icon>person_add</mat-icon>
+                    </div>                           
+                </mat-card-title-group>
+              </mat-card-header>            
+          </mat-card>
+        </div>
+        <div class="col-md-6">
+          <mat-card class="statistical-card">
+              <mat-card-header>
+                <mat-card-title-group>
+                    <mat-card-title class="title">Tổng bình luận</mat-card-title>                 
+                    <mat-card-subtitle class="sub-title">
+                        <span>{{totalComment}}</span>
+                    </mat-card-subtitle>
+                    <div class="icon-container">
+                        <mat-icon>comments</mat-icon>
+                    </div>                                           
+                </mat-card-title-group>
+              </mat-card-header>                        
+          </mat-card>
+        </div>
+      </div>      
+  </div>
+ 
+<!-- <div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Sách được yêu thích</h4>                            
+        <div class="table-responsive">
+            <table class="table align-middle">
+                <thead>
+                    <tr>                       
+                        <th class="th-title">Tên sách</th>
+                        <th class="th-title">Tác giả</th>
+                        <th class="th-title">Lượt thích</th>                      
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor=''>                                                
+                        <td>
+                            <div class="book-content">
+                                <img [src]=""  alt="user" width="90" >
+                                <div class="ms-3">
+                                    <h4 class="book-name"></h4>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="book-ps"></td>                                         
+                        <td>
+                            <h5 class="book-sm"></h5>  
+                        </td>                    
+                    </tr>              
+                </tbody>
+            </table>
+        </div>
+    </div>    
+</div>  -->

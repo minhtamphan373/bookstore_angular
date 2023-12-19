@@ -7,16 +7,17 @@
             <table class="table align-middle">
                 <thead>                   
                     <tr>
-                        <th class="th-title"></th>
+                        <!-- <th class="th-title"></th> -->
                         <th class="th-title">Mã thể loại</th>
-                        <th class="th-title">Tên thể loại</th>                                               
+                        <th class="th-title">Tên thể loại</th> 
+                        <th></th>                                              
                     </tr>
                 </thead>
                 <tbody>
                     <tr *ngFor='let theloai of theloais'>
-                        <td>
+                        <!-- <td>
                             <input type="checkbox" class="check">
-                        </td>
+                        </td> -->
                         <td>
                             <h5 class="category-sm">{{theloai.id}}</h5>
                         </td>
@@ -26,7 +27,12 @@
                                     <h4 class="category-sm">{{theloai.tenTheLoai}}</h4>                                  
                                 </div>
                             </div>
-                        </td>                                             
+                        </td> 
+                        <td>
+                            <div class="button-right">
+                                <button type="button" class="btn btn-outline-success" (click)="editTheLoai(theloai)">Sửa</button>
+                            </div>
+                        </td>                                            
                     </tr>              
                 </tbody>
             </table>
@@ -35,7 +41,5 @@
 </div>
 
 <div class="button-right">
-    <button type="button" class="btn btn-outline-success">Thêm thể loại</button>
-    <button type="button" class="btn btn-outline-success">Xóa thể loại</button>
-    <button type="button" class="btn btn-outline-success">Sửa thể loại </button>
+    <button type="button" class="btn btn-outline-success" (click)="initNewTheLoai()">Thêm thể loại</button>   
 </div>

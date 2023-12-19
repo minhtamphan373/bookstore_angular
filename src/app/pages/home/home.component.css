@@ -9,56 +9,72 @@
     margin-top: 5rem;
 } */
 .content{
-    display: flex;
-    padding:30px;
     /* background-color: azure; */
     position: relative;
 }
-.card-image-top{
-    width: 100px;
-    height: 150px;
-    cursor: pointer;
-    /* padding-left: 70px;
-    padding-right: 70px; */
-    margin-right: 70px;
-    margin-left: 70px;
-    
+.row{
+    margin-bottom: 2rem;
 }
-h4{
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: justify;
-    font-family: Roboto;
-    color:#101010;
-    padding-left: 70px;
-    padding-right: 70px;
+.row img{
+    border-radius: 5px !important;
 }
-h1{
-    font-weight: bold;
-    font-size: 25px;
-    padding-top: 40px;
-    text-align: center;
-    font-family: Roboto;
-    color:#101010
-}
-h5{
-    font-size: 15px;
-    /* text-align: justify; */
-    font-family: Roboto;
-    color:#101010;
-    padding-left: 70px;
-    padding-right: 70px;
-}
-.xemthem{
-    font-weight: bold;
-    font-size: 14px;
-    color:#c86363;
-    padding-left: 60%;
-}
-.homepage-detail{
-    display: flex;
-    padding:30px;
-    background-color: azure;
+.home-title{
     position: relative;
+    top: 3rem;
+    text-transform:capitalize;
+    font-size: 40px;
+    text-align: center;
 }
+.home-content{
+    position: relative;
+    top: 3rem;
+    line-height: 2rem;
+    font-size: 22px;
+}
+.col-cont{
+    margin-top: 5rem;
+    text-align: center;
+}
+.button-right{
+    position: relative;
+    top: 3rem;
+    right: auto;
+    margin: 5px 10px 15px 0;
+    text-align: center;
+}
+.button-right .btn.btn-outline-success{
+    text-transform: uppercase;
+    margin-right: 10px;
+    color: #749BC2;
+    border-color: #749BC2;
+}
+.button-right .btn.btn-outline-success:hover{
+    color: #fff;
+    background: #749BC2;
+}
+.intro-2{
+    margin-top: 3rem;
+    background-color: azure;
+    height: 111vh;
+
+    .title-2{
+        margin-top: 2rem;
+        text-transform:capitalize;
+        text-align: center;
+        font-size: 40px;
+    }
+    
+    .content-2{
+        font-size: 22px;
+        text-align: center;
+        line-height: 28px;
+    }
+
+    .image{
+        width: 250px;
+        height: 290px;
+        margin-left: 2rem;
+        text-align: center;
+    }
+}
+

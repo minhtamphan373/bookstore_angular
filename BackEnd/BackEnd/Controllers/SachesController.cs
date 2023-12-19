@@ -51,6 +51,7 @@ namespace BackEnd.Controllers
       return sach;
     }
 
+
     // PUT: api/Saches/5
     // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
     [HttpPut("{id}")]
@@ -164,9 +165,8 @@ namespace BackEnd.Controllers
 
       return NoContent();
     }
-
-    [HttpGet("download-pdf")]
-    public async Task<ActionResult<Sach>> DownloadPdf(int id)
+    [HttpGet("download-pdf/{id}")]
+    public async Task<IActionResult> DownloadPdf(int id)
     {
       var sach = await _context.Saches.FindAsync(id);
 
@@ -193,14 +193,47 @@ namespace BackEnd.Controllers
 
 
     //lấy ds sách theo id thể loại
-    [HttpGet("all-sach-by-idtheloai")]
-    public IActionResult GetAllSachByIDTheLoai(int categoryID)
+    [HttpGet("books-id-category/{idTheLoai}")]
+    public IActionResult GetAllSachByIDTheLoai(int idTheLoai)
     {
-      var result = _context.Saches.Where(b => b.IdTheLoai == categoryID).ToList();
+      var result = _context.Saches.Where(b => b.IdTheLoai == idTheLoai)
+        .ToList();
       return Ok(result);
     }
 
+    [HttpGet("{idSach}/ten-the-loai-sach")]
+    public IActionResult GetTenTheLoaiByIDSach(int idSach)
+    {
+      try
+      {
+        var sach = _context.Saches.FirstOrDefault(s => s.Id == idSach);
+        if(sach == null)
+        {
+          return NotFound();
+        }
 
-    
+        var theloai = _context.TheLoais.FirstOrDefault(t => t.Id == sach.IdTheLoai);
+        if(theloai == null)
+        {
+          return NotFound();
+        }
+        var tenTheLoai = theloai.TenTheLoai;
+
+        return Ok(tenTheLoai);
+      }
+      catch
+      {
+        return BadRequest();
+      }
+    }
+    [HttpGet("totalSachs")]
+    public IActionResult GetTotalBooks()
+    {
+      int totalBooks = _context.Saches.Count();
+      return Ok(totalBooks);
+    }
+
+
+
   }
 }

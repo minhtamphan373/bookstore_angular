@@ -1,28 +1,308 @@
 {
   "Files": [
     {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\NhaGiaKim.pdf",
+      "PackagePath": "staticwebassets\\Images\\NhaGiaKim.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\ammuuthayao.jpg",
+      "PackagePath": "staticwebassets\\Images\\ammuuthayao.jpg"
+    },
+    {
       "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\anhluatrongtrotan.jpg",
       "PackagePath": "staticwebassets\\Images\\anhluatrongtrotan.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\bachhanhda.jpg",
+      "PackagePath": "staticwebassets\\Images\\bachhanhda.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\banconamchongoi.jpg",
+      "PackagePath": "staticwebassets\\Images\\banconamchongoi.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\bienthan.jpg",
+      "PackagePath": "staticwebassets\\Images\\bienthan.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\chienthangconquytrongban.jpg",
+      "PackagePath": "staticwebassets\\Images\\chienthangconquytrongban.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\chotoixinmotvevetuoitho.jpg",
+      "PackagePath": "staticwebassets\\Images\\chotoixinmotvevetuoitho.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\cogaidentuhomqua.jpg",
+      "PackagePath": "staticwebassets\\Images\\cogaidentuhomqua.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\daiduongden.jpg",
+      "PackagePath": "staticwebassets\\Images\\daiduongden.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\dethidammau.jpg",
+      "PackagePath": "staticwebassets\\Images\\dethidammau.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\doigiohu01.jpg",
+      "PackagePath": "staticwebassets\\Images\\doigiohu01.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\duongxuamaytrang.jpg",
+      "PackagePath": "staticwebassets\\Images\\duongxuamaytrang.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\dut-tinh.jpg",
+      "PackagePath": "staticwebassets\\Images\\dut-tinh.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\hanhtrinhvephuongdong.jpg",
+      "PackagePath": "staticwebassets\\Images\\hanhtrinhvephuongdong.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\hoanghauyquan.jpg",
+      "PackagePath": "staticwebassets\\Images\\hoanghauyquan.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\hoangtube.jpg",
+      "PackagePath": "staticwebassets\\Images\\hoangtube.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\hosotamlyphamtoi.jpg",
+      "PackagePath": "staticwebassets\\Images\\hosotamlyphamtoi.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\khongcocaichet.jpg",
+      "PackagePath": "staticwebassets\\Images\\khongcocaichet.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\khongconlaconnguoi.jpg",
+      "PackagePath": "staticwebassets\\Images\\khongconlaconnguoi.jpg"
     },
     {
       "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\matbiec.jpg",
       "PackagePath": "staticwebassets\\Images\\matbiec.jpg"
     },
     {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\matmadothai.jpg",
+      "PackagePath": "staticwebassets\\Images\\matmadothai.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\motlitnuocmat.jpg",
+      "PackagePath": "staticwebassets\\Images\\motlitnuocmat.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\muonkiepnhansinh.jpg",
+      "PackagePath": "staticwebassets\\Images\\muonkiepnhansinh.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\muusat.jpg",
+      "PackagePath": "staticwebassets\\Images\\muusat.jpg"
+    },
+    {
       "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\nhagiakim.jpg",
       "PackagePath": "staticwebassets\\Images\\nhagiakim.jpg"
     },
     {
-      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\10337-khu-vuon-ngon-tu-thuviensach.vn.pdf",
-      "PackagePath": "staticwebassets\\Pdfs\\10337-khu-vuon-ngon-tu-thuviensach.vn.pdf"
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\phapytanminh.jpg",
+      "PackagePath": "staticwebassets\\Images\\phapytanminh.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\quankhunamdong.jpg",
+      "PackagePath": "staticwebassets\\Images\\quankhunamdong.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\sodo.jpg",
+      "PackagePath": "staticwebassets\\Images\\sodo.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\suimlangcuabaycuu.jpg",
+      "PackagePath": "staticwebassets\\Images\\suimlangcuabaycuu.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\taisaolaichanchu.jpg",
+      "PackagePath": "staticwebassets\\Images\\taisaolaichanchu.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\tamthuc.jpg",
+      "PackagePath": "staticwebassets\\Images\\tamthuc.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\tatden.jpg",
+      "PackagePath": "staticwebassets\\Images\\tatden.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\thienngaden.jpg",
+      "PackagePath": "staticwebassets\\Images\\thienngaden.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\thientaibentraikedienbenphai.jpg",
+      "PackagePath": "staticwebassets\\Images\\thientaibentraikedienbenphai.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\toilaai.jpg",
+      "PackagePath": "staticwebassets\\Images\\toilaai.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\toilabetoo.jpg",
+      "PackagePath": "staticwebassets\\Images\\toilabetoo.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\trenduongbang.jpg",
+      "PackagePath": "staticwebassets\\Images\\trenduongbang.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Images\\tungquatuoi20.jpg",
+      "PackagePath": "staticwebassets\\Images\\tungquatuoi20.jpg"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\Ammuuthaynao.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Ammuuthaynao.pdf"
     },
     {
       "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\NhaGiaKim.pdf",
       "PackagePath": "staticwebassets\\Pdfs\\NhaGiaKim.pdf"
     },
     {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\Phapytanminh.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\Phapytanminh.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\bachhanhda.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\bachhanhda.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\banco5chongoi.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\banco5chongoi.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\bienthan.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\bienthan.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\chienthangconquytrongban.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\chienthangconquytrongban.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\chotoixinmotvevetuoitho.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\chotoixinmotvevetuoitho.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\cogaidentuhomqua.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\cogaidentuhomqua.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\daiduongden.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\daiduongden.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\dethudamau.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\dethudamau.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\doigiohu.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\doigiohu.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\duongxuamaytrang.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\duongxuamaytrang.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\duttinh.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\duttinh.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\hanhtrinhvephuongdong.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\hanhtrinhvephuongdong.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\hoanghaquyquan.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\hoanghaquyquan.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\hoangtube.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\hoangtube.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\hosotamlyphamtoi.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\hosotamlyphamtoi.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\khongcocaichet.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\khongcocaichet.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\khongconlaconnguoi.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\khongconlaconnguoi.pdf"
+    },
+    {
       "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\matbiec.pdf",
       "PackagePath": "staticwebassets\\Pdfs\\matbiec.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\matmadothai.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\matmadothai.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\motlitnuocmat.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\motlitnuocmat.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\muonkiepnhansinh.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\muonkiepnhansinh.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\muusat.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\muusat.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\quankhunamdong.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\quankhunamdong.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\sodo.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\sodo.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\suimlangcuabaycuu.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\suimlangcuabaycuu.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\taisaolaichanchu.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\taisaolaichanchu.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\tamthuc.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\tamthuc.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\tatden.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\tatden.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\thienngaden.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\thienngaden.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\thientaibentraikedienbenphai.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\thientaibentraikedienbenphai.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\toilaaineuvaythibaonhieu.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\toilaaineuvaythibaonhieu.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\toilabeto.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\toilabeto.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\trenduongbang.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\trenduongbang.pdf"
+    },
+    {
+      "Id": "D:\\UNIVER3\\Công nghệ WEB\\DoAn\\bookstoreAngular\\BackEnd\\BackEnd\\wwwroot\\Pdfs\\tungquatuoi20.pdf",
+      "PackagePath": "staticwebassets\\Pdfs\\tungquatuoi20.pdf"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.BackEnd.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -1,0 +1,47 @@
+
+.card{
+    position: relative;
+    left: 7rem;
+    margin: 2rem 2rem 3rem 2rem;
+    width: 70%;
+    justify-content: center;        
+}
+.card-title{
+    font-weight: bolder;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.editsach-title {
+    padding-bottom: 10px;
+    margin: 1px 0 3px 0;
+}
+.title-edit{
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+.input-info {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid rgb(4, 4, 4);
+    border-radius: 5px;
+}
+
+.button-right{
+    position: relative;
+    right: auto;
+    margin: 5px 10px 15px 0;
+    text-align: right;
+}
+.button-right .btn.btn-outline-success{
+    text-transform: uppercase;
+    margin-right: 10px;
+    color: #6200ee;
+    border-color: #6200ee;
+}
+.button-right .btn.btn-outline-success:hover{
+    color: #fff;
+    background: #6200ee;
+}

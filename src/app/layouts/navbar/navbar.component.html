@@ -5,15 +5,16 @@
     <a href="/pages/home" class="site-logo"><span>BOOKWORM</span></a>
     <button mat-button routerLink="/pages/home" routerLinkActive="active" class="btn-title">trang chủ</button>
     <button mat-button routerLink="/pages/contact" routerLinkActive="active" class="btn-title">liên hệ</button> 
-    <button mat-button [matMenuTriggerFor]="menu" routerLink="/pages/library" routerLinkActive="active" class="btn-title">thư viện <i class="fa-solid fa-caret-down"></i></button>
+    <button mat-button routerLink="/pages/about" routerLinkActive="active" class="btn-title">giới thiệu</button> 
+    <button mat-button routerLink="/pages/library" routerLinkActive="active" class="btn-title">thư viện</button>
     <div *ngIf="role === 'Admin'">
-      <button mat-button routerLink="/adminpanel" routerLinkActive="active" class="btn-title">Quản lý</button>
+      <button mat-button routerLink="/adminpanel/statistical" routerLinkActive="active" class="btn-title">Quản lý</button>
     </div>
-      <mat-menu #menu="matMenu">
+      <!-- <mat-menu #menu="matMenu">
         <button mat-menu-item class="sub-btn-title">văn học</button>
         <button mat-menu-item class="sub-btn-title">trinh thám</button>
         <button mat-menu-item class="sub-btn-title">tâm linh</button>
-      </mat-menu>
+      </mat-menu> -->
     <span class="example-spacer"></span>
     <button mat-icon-button class="example-icon">
         <mat-icon>search</mat-icon>
@@ -23,8 +24,10 @@
     </button>
     <div>
       <div *ngIf="role === 'User' || role === 'Admin'; else loginSection">
-        <a href="#">{{ name }}</a>
-        <button mat-button (click)="logout()">Log Out</button>
+        <button mat-button [matMenuTriggerFor]="menu">{{ name }}<i class="fa-solid fa-caret-down"></i></button>
+        <mat-menu #menu="matMenu" >
+          <button mat-menu-item class="sub-btn-title" (click)="logout()">Log Out</button>
+        </mat-menu>
       </div>
       <ng-template #loginSection>
         <div class="menu-button">

@@ -72,3 +72,9 @@
 .active:focus{
     color: black;
 }
+
+.user-name{
+    text-decoration: none;
+    color: var(--button-color);
+}
+

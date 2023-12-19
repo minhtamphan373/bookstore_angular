@@ -1,6 +1,8 @@
 import { Component, OnInit} from '@angular/core';
+import { Sach } from 'src/app/models/Sach';
 import { ApiService } from 'src/app/services/api.service';
 import { AuthService } from 'src/app/services/auth.service';
+import { SachService } from 'src/app/services/sach.service';
 import { UserStoreService } from 'src/app/services/user-store.service';
 
 @Component({
@@ -13,7 +15,15 @@ export class NavbarComponent  {
   public users: any = [];
   public name: string = "";
   public role!: string;
-  constructor(private api: ApiService, private auth: AuthService, private userStore: UserStoreService){ }
+  keyword: string
+  sach: Sach[]
+  
+  constructor(
+    private api: ApiService,
+    private auth: AuthService, 
+    private userStore: UserStoreService,
+    private sachService: SachService,
+    ){ }
   ngOnInit() {
       this.userStore.getNameFromStore()
       .subscribe(value => {
@@ -37,4 +47,5 @@ export class NavbarComponent  {
     this.role = '';
     window.location.reload();
   }
+
 }

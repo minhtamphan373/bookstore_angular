@@ -1,0 +1,37 @@
+<div class="card">
+    <div class="card-body">
+        <!-- title -->
+            <h4 class="card-title">Thông tin thể loại</h4>                            
+        <!-- title -->
+       <div class="form-responsive">    
+            <div *ngIf="theloai">                
+                <div class="form-edit">
+                    <div class="editsach-title">
+                        <label class="title-edit">Mã thể loại</label>
+                        <input [(ngModel)]="theloai.id" readonly class="input-info"/>
+                    </div>
+                    <div class="editsach-title">
+                        <label class="title-edit">Tên thể loại</label>
+                        <input [(ngModel)]="theloai.tenTheLoai" placeholder="Nhập tên thể loại" class="input-info"/>
+                    </div>                    
+                    <div class="button-right">
+                        <button type="submit" class="btn btn-outline-success" (click)="updateTheLoai(theloai)">Cập nhật</button>                        
+                    </div>
+                </div>  
+            </div>     
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+

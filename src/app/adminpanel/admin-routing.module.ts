@@ -7,6 +7,10 @@ import { AccountsComponent } from './accounts/accounts.component';
 import { CommentsComponent } from './comments/comments.component';
 import { BookspdfComponent } from './bookspdf/bookspdf.component';
 import { AuthGuard } from '../guards/auth.guard';
+import { BookAddComponent } from './bookspdf/book-add/book-add.component';
+import { BookEditComponent } from './bookspdf/book-edit/book-edit.component';
+import { CategoryEditComponent } from './categories/category-edit/category-edit.component';
+import { CategoryAddComponent } from './categories/category-add/category-add.component';
 const routes: Routes = [{
   path: 'adminpanel', component: AdminComponent, canActivate: [AuthGuard],
   children:[
@@ -20,6 +24,11 @@ const routes: Routes = [{
       redirectTo: 'adminpanel',
       pathMatch: 'full',
     },
+    {path: 'book-add', component: BookAddComponent},
+    {path: 'book-edit', component: BookEditComponent},
+    {path: 'category-add', component: CategoryAddComponent},
+    {path: 'category-edit', component: CategoryEditComponent},
+
   ],
   
 }];

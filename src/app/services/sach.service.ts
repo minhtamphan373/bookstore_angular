@@ -26,16 +26,16 @@ export class SachService {
     return this.http.get<Sach>(`${environment.apiUrl}/${this.url}/${sachID}`);
   }
 
-  public updateSach(sach: Sach): Observable<Sach[]> {
+  public updateSach(sach: Sach,sachID: number): Observable<Sach> {
 
-    return this.http.put<Sach[]>(
-      `${environment.apiUrl}/${this.url}`, sach);
-      // `${environment.apiUrl}/${this.url}/${sach.id}`, sach);
+    return this.http.put<Sach>(
+      `${environment.apiUrl}/${this.url}/${sachID}`, sach);
+      
   }
 
-  public createSach(sach: Sach): Observable<Sach[]> {
+  public createSach(sach: Sach): Observable<Sach> {    
     const formData = new FormData();
-    formData.append('id', sach.id.toString());
+    //formData.append('id', sach.id.toString());
     formData.append('tenSach', sach.tenSach);
     formData.append('tacGia', sach.tacGia);
     formData.append('soTrang', sach.soTrang.toString());
@@ -43,17 +43,22 @@ export class SachService {
     formData.append('tomTat', sach.tomTat);
     formData.append('pdfFile', sach.pdfFile);
     formData.append('idTheLoai', sach.idTheLoai.toString());    
-    return this.http.post<Sach[]>(
+    return this.http.post<Sach>(
       `${environment.apiUrl}/${this.url}`, formData);
   }
 
-  public deleteSach(sach: Sach): Observable<Sach[]> {
-    return this.http.delete<Sach[]>(`${environment.apiUrl}/${this.url}/${sach.id}`);
+  public deleteSach(sachID: number): Observable<Sach> {
+    return this.http.delete<Sach>(`${environment.apiUrl}/${this.url}/${sachID}`);
   }
   
-  public getSachTheLoai(theLoaiID: string): Observable<Sach[]> {
-    return this.http.get<Sach[]>(`${environment.apiUrl}/${this.url}/${theLoaiID}`);
+  public getSachTheLoai(theLoaiID:number): Observable<Sach[]> {
+    return this.http.get<Sach[]>(`${environment.apiUrl}/${this.url}/books-id-category/${theLoaiID}`);
   }
+
+  public getTenTheLoaiTheoIdSach(idSach: number){
+    return this.http.get<Sach[]>(`${environment.apiUrl}/${this.url}/${idSach}/ten-the-loai-sach`);
+  }
+
   public getTotal(): Observable<number> {
     return this.http.get<number>(`${environment.apiUrl}/${this.url}/totalSachs`);
   }
@@ -62,4 +67,6 @@ export class SachService {
     return this.http.get(`${environment.apiUrl}/${this.url}/download-pdf/${id}`,
     {observe: 'response',responseType:'blob'})
   }  
+
+ 
 }

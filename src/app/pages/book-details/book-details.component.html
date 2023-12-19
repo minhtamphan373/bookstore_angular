@@ -1,18 +1,10 @@
 <div class="book-details-page" *ngIf="sachData">
-    <div class="row book-details">
-        <!-- <div class="col-3">
-            <div class="container">
-                <h1>Thể loại</h1>
-                <div class="category" *ngFor="let theloai of theloaiList">
-                    <h3>{{theloai.tenTheLoai}}</h3>                    
-                </div>
-            </div>            
-        </div> -->
+    <div class="row book-details">        
         <div class="col-4">            
             <img class="sach-image" src="{{sachData.hinhAnh}}" alt="">  
             <div class="book-button-col">
                 <a mat-raised-button href="{{sachData.pdfFile}}" target="_blank">Đọc sách</a>
-                <a mat-raised-button href="{{sachData.pdfFile}}" target="_blank">Tải sách</a>
+                <a mat-raised-button (click)="downloadPdf(sachData.id.toString())">Tải sách</a>
             </div>                    
         </div>
     
@@ -22,10 +14,56 @@
                 <h3>Tác giả: {{sachData.tacGia}}</h3>
                 <h3>Thể loại: {{theLoaiData?.tenTheLoai}}</h3>
                 <h3>Số trang: {{sachData.soTrang}}</h3>                
-                <h3>Lượt đọc: </h3>
-                <h3>Lượt tải: </h3>
                 <h3>Mô tả: {{sachData.tomTat}}</h3>                              
             </div>
         </div>
     </div>
 </div>
+
+<mat-card>
+    <h2 class="cmt-title">Bình luận về sách</h2>
+    <form (submit)="onPostData()">
+        <!-- <mat-form-field>
+            <input type="text" matInput name="title" placeholder="Post title here"/>
+        </mat-form-field> -->
+
+        <mat-form-field>
+            <mat-label>Nội dung bình luận</mat-label>
+            <textarea [(ngModel)]="cmt.noiDung" matInput name="content" rowws="10"></textarea>
+        </mat-form-field>
+
+        <button type="submit" mat-raised-button color="accent">
+            Gửi bình luận
+        </button>
+    </form>
+</mat-card>
+
+<!--hiển thị danh sách comment-->
+    
+<mat-list>
+    <h2 class="all-cmt-title">Tất cả bình luận</h2>
+    <div *ngFor="let cmt of comment" class="all-cmt-content">
+    <div *ngIf="cmt.idSach == IDSach">
+        <mat-list-item>
+            <div matListItemTitle>{{cmt.idUser}}</div>
+            <div matListItemLine>{{cmt.noiDung}}</div>  
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        </div>   
+    </div>     
+</mat-list>
+      
+
+<!-- <mat-accordion>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            title
+        </mat-expansion-panel-header>
+        <p>Content</p>
+        <mat-action-row>
+            <p class="date">Date time</p>
+            <button mat-flat-button>edit post</button>
+            <button mat-flat-button>delete post</button>
+        </mat-action-row>
+    </mat-expansion-panel>
+</mat-accordion> -->

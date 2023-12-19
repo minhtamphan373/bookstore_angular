@@ -37,6 +37,9 @@ import { ImageSliderComponent } from './home/imageSlider/components/imageSlider.
 import { AuthGuard } from '../guards/auth.guard';
 import { TokenInterceptor } from '../interceptors/token.interceptor';
 import { NgToastModule } from 'ng-angular-popup';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { LibByCategoryComponent } from './library/lib-by-category/lib-by-category.component';
+
 
 @NgModule({
   imports: [
@@ -62,6 +65,7 @@ import { NgToastModule } from 'ng-angular-popup';
     HttpClientModule,
     MatMenuModule,
     NgToastModule,
+    NgxPaginationModule,
 
   ],
   declarations: [
@@ -77,6 +81,7 @@ import { NgToastModule } from 'ng-angular-popup';
     LibraryComponent,
     EditSachComponent,
     BookDetailsComponent,
+    LibByCategoryComponent,
   ],
   providers: [
     ServerService,

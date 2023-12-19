@@ -26,12 +26,12 @@ namespace BackEnd.Controllers
       _context = context;
     }
 
-  
+
 
     [HttpPost("login")]
     public async Task<IActionResult> Login([FromBody] User userObj)
     {
-      if(userObj  == null)
+      if (userObj == null)
       {
         return BadRequest();
       }
@@ -42,7 +42,7 @@ namespace BackEnd.Controllers
       {
         return NotFound(new { Message = "User Not Found" });
       }
-      if(!PasswordHasher.VerifyPassword(userObj.Password, user.Password))
+      if (!PasswordHasher.VerifyPassword(userObj.Password, user.Password))
       {
         return BadRequest(new { Message = "Password is Incorrect" });
       }
@@ -65,13 +65,13 @@ namespace BackEnd.Controllers
       }
 
       //Check username
-      if(await CheckUserNameExistAsync(userObj.UserName))
+      if (await CheckUserNameExistAsync(userObj.UserName))
       {
-        return BadRequest(new {Message = "Username Already Exist"});
+        return BadRequest(new { Message = "Username Already Exist" });
       }
 
       //Check email
-      if(await CheckEmailExistAsync(userObj.Email))
+      if (await CheckEmailExistAsync(userObj.Email))
       {
         return BadRequest(new { Message = "Email Already Exist" });
       }
@@ -163,6 +163,36 @@ namespace BackEnd.Controllers
     public async Task<ActionResult<User>> GetUsers()
     {
       return Ok(await _context.Users.ToListAsync());
+    }
+
+    [HttpGet("totalUsers")]
+    public IActionResult GetTotalCmt()
+    {
+      int total = _context.Users.Count();
+      return Ok(total);
+    }
+
+    [HttpGet("{id}/username")]
+    public IActionResult GetNameById(int id)
+    {
+      var user = _context.Users.FirstOrDefault(x => x.Id == id);
+      if(user == null)
+      {
+        return NotFound();
+      }
+      return Ok(user.UserName);
+
+    }
+
+    [HttpGet("{id}")]
+    public IActionResult GetUser(int id)
+    {
+      var user = _context.Users.FirstOrDefault(x => x.Id == id);
+      if(user == null)
+      {
+        return NotFound();
+      }
+      return Ok(user);
     }
   }
 

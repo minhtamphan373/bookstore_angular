@@ -1,4 +1,4 @@
-.card{
+/* .card{
     margin: 2rem .2rem 1.3rem -1rem;
 }
 .card-title{
@@ -11,25 +11,25 @@
     text-transform: uppercase;
     text-align: center;
     justify-content: baseline;
-    font-weight: 800;    
+    font-weight: 800; 
 }
 .book-name .book-auth{
-    font-size: medium;
+    font-size: 12px;
 
 }
 .book-sm{
-    margin-left: 20px;
+    margin: 0 1rem 0 2rem;
     overflow: hidden;
-    width: 500px;
-    font-size: medium;
+    width: 300px;
+    font-size: 12px;
 }
 .book-content{
     display: flex;
-    font-size: medium;
+    font-size: 12px;
     align-items: center;
 }
 .book-ps{
-    font-size: medium;
+    font-size: 12px;
     text-align: center;
 }
 
@@ -52,6 +52,37 @@
 .check{
     font-size: 10px;
 }
-/* .btn.btn-outline-success:focus{
-    background: #6200ee;
+.pagess{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.ngx-pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ngx-pagination li{
+    width: 35px;
+    height: 35px;
+    border-radius: 50% !important;
+    background: #f8f8f8;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .small-screen{
+        display: none !important;
+    }
+
+    .pagination-previous,
+    .pagination-next{
+        a,span{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            color: #f8f8f8;
+        }
+    }
 } */

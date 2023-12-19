@@ -57,15 +57,20 @@ namespace BackEnd.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("IdTheLoai");
+
                     b.ToTable("Sach", (string)null);
                 });
 
             modelBuilder.Entity("BackEnd.Models.TheLoai", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("TheLoai1")
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("TenTheLoai")
                         .HasMaxLength(150)
                         .HasColumnType("nvarchar(150)")
                         .HasColumnName("TheLoai");
@@ -83,6 +88,9 @@ namespace BackEnd.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Password")
                         .HasColumnType("nvarchar(max)");
 
@@ -92,15 +100,27 @@ namespace BackEnd.Migrations
                     b.Property<string>("Token")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("UserEmail")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("UserName")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users", (string)null);
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("BackEnd.Models.Sach", b =>
+                {
+                    b.HasOne("BackEnd.Models.TheLoai", "IdTheLoaiNavigation")
+                        .WithMany("Saches")
+                        .HasForeignKey("IdTheLoai")
+                        .HasConstraintName("FK_Sach_TheLoai");
+
+                    b.Navigation("IdTheLoaiNavigation");
+                });
+
+            modelBuilder.Entity("BackEnd.Models.TheLoai", b =>
+                {
+                    b.Navigation("Saches");
                 });
 #pragma warning restore 612, 618
         }

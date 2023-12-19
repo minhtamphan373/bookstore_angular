@@ -44,6 +44,10 @@ export class AuthService {
     return !!localStorage.getItem('token')
   }
 
+  getTotal() {
+    return this.http.get<number>(`${environment.apiUrl}/${this.url}/totalUsers`);
+  }
+
   decodeToken(){
     const jwtHelper = new JwtHelperService();
     const token = this.getToken()!;

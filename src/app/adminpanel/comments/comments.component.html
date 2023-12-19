@@ -1,1 +1,54 @@
-<p>comments works!</p>
+<div class="card">
+    <div class="card-body">
+        <!-- title -->
+                <h4 class="card-title">Danh sách Comment</h4>                            
+        <!-- title -->
+        <div class="table-responsive">
+            <table class="table align-middle">
+                <thead>                   
+                    <tr>
+                        <!-- <th class="th-title"></th> -->
+                        <th class="th-title">Mã Sách</th>
+                        <th class="th-title">Nội dung comment</th> 
+                        <th class="th-title">Ngày đăng</th>
+                        <th></th>                                              
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let cmt of comments| paginate: { itemsPerPage: itemPerPage, currentPage: p }'>
+                        <!-- <td>
+                            <input type="checkbox" class="check">
+                        </td> -->
+                        <td>
+                            <h5 class="category-sm">{{cmt.idSach}}</h5>
+                        </td>
+                        <td>
+                            <div class="category-content">                                
+                                <div class="ms-3">
+                                    <h4 class="category-sm">{{cmt.noiDung}}</h4>                                  
+                                </div>
+                            </div>
+                        </td> 
+                        <td>
+                            <div class="category-content">                                
+                                <div class="ms-3">
+                                    <h4 class="category-sm">{{cmt.ngayDang}}</h4>                                  
+                                </div>
+                            </div>
+                        </td> 
+                        <td>
+                            <div class="button-right">
+                                <button type="button" class="btn btn-outline-success" (click)="deleteComment(cmt.id)">Xóa</button>
+                            </div>
+                        </td>                                            
+                    </tr>              
+                </tbody>
+            </table>
+            <div class="pagess">
+                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+            </div>
+        </div>
+    </div>    
+</div>
+
+

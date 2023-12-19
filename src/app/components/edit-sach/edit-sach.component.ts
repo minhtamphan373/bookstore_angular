@@ -21,23 +21,23 @@ export class EditSachComponent implements OnInit {
 
   ngOnInit(): void { }
 
-  updateSach(sach: Sach) {
-    this.sachService
-      .updateSach(sach)
-      .subscribe((saches: Sach[]) => this.sachesUpdated.emit(saches));
-  }
+  // updateSach(sach: Sach) {
+  //   this.sachService
+  //     .updateSach(sach)
+  //     .subscribe((saches: Sach[]) => this.sachesUpdated.emit(saches));
+  // }
 
-  deleteSach(sach: Sach) {
-    this.sachService
-      .deleteSach(sach)
-      .subscribe((saches: Sach[]) => this.sachesUpdated.emit(saches));
-  }
+  // deleteSach(sach: Sach) {
+  //   this.sachService
+  //     .deleteSach(sach)
+  //     .subscribe((saches: Sach[]) => this.sachesUpdated.emit(saches));
+  // }
 
-  createSach(sach: Sach) {
-    this.sachService
-      .createSach(sach)
-      .subscribe((saches: Sach[]) => this.sachesUpdated.emit(saches));
-  }
+  // createSach(sach: Sach) {
+  //   this.sachService
+  //     .createSach(sach)
+  //     .subscribe((saches: Sach[]) => this.sachesUpdated.emit(saches));
+  // }
 
   // initNewSach() {
   //   this.sachToEdit = new Sach();
