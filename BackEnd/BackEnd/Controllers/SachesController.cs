@@ -51,6 +51,16 @@ namespace BackEnd.Controllers
       return sach;
     }
 
+    [HttpGet("(search)")]
+    public async Task<ActionResult<IEnumerable<Sach>>> SearchProducts(string keyword)
+    {
+      var sach = await _context.Saches
+          .Where(p => p.TenSach.Contains(keyword))
+          .ToListAsync();
+
+      return Ok(sach);
+    }
+
 
     // PUT: api/Saches/5
     // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754

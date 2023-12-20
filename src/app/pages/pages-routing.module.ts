@@ -8,7 +8,8 @@ import { BookDetailsComponent } from './book-details/book-details.component';
 import { HomeComponent } from './home/home.component';
 import { PagesComponent } from './pages.component';
 import { LibraryComponent } from './library/library.component';
-import { AuthGuard } from '../guards/auth.guard';
+import { LibByCategoryComponent } from './library/lib-by-category/lib-by-category.component';
+import { SearchComponent } from './search/search.component';
 
 
 const routes: Routes = [{
@@ -21,6 +22,8 @@ const routes: Routes = [{
         {path: 'about', component: AboutComponent},
         {path: 'book-details', component: BookDetailsComponent},
         {path: 'library', component: LibraryComponent},
+        {path: 'lib-by-category', component: LibByCategoryComponent},     
+        {path: 'search', component: SearchComponent}, 
         {
             path: 'bookdetail/:sachId',
             component: BookDetailsComponent

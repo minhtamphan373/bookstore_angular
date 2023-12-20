@@ -39,7 +39,7 @@ import { TokenInterceptor } from '../interceptors/token.interceptor';
 import { NgToastModule } from 'ng-angular-popup';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { LibByCategoryComponent } from './library/lib-by-category/lib-by-category.component';
-
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   imports: [
@@ -82,6 +82,8 @@ import { LibByCategoryComponent } from './library/lib-by-category/lib-by-categor
     EditSachComponent,
     BookDetailsComponent,
     LibByCategoryComponent,
+    SearchComponent,
+
   ],
   providers: [
     ServerService,

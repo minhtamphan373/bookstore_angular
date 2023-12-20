@@ -1,0 +1,34 @@
+*{
+    font-family:sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.container{
+    display: inline-block;
+    position: relative;
+    top: 5rem;
+    left: 3rem;
+    right: 0;
+}
+
+.search-form{
+    margin-left: 1rem;
+}
+
+.lib-content{
+    margin-left: 20px;
+}
+.btn-search{
+    padding: 0 1rem;
+    margin: 0 1rem;
+    background-color: var(--button-text-color);
+    color: var(--button-color);
+}
+mat-card-content img{
+    width: 140px;
+    height: 170px;
+    margin-left: 30px;
+}
+mat-card-subtitle{
+    text-align: center;
+}

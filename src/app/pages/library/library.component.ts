@@ -42,7 +42,7 @@ export class LibraryComponent{
   
   getSachByCategory(id: number){
     this.data=id;
-    this.router.navigate(['pages/lib-by-category'], {queryParams: {id: JSON.stringify(this.data)}});
+    this.router.navigate(['/pages/lib-by-category'], {queryParams: {id: JSON.stringify(this.data)}});
   }
   // updateSachesList(saches: Sach[]){
   //   this.saches = saches;

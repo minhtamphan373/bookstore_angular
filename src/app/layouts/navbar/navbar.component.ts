@@ -48,4 +48,11 @@ export class NavbarComponent  {
     window.location.reload();
   }
 
+  searchSach(){
+    this.sachService.searchSach(this.keyword)
+    .subscribe((res:Sach[]) =>{
+      this.sach = res;
+    })
+  }
+
 }

@@ -68,5 +68,9 @@ export class SachService {
     {observe: 'response',responseType:'blob'})
   }  
 
+  public searchSach(keyword: string):Observable<Sach[]>{
+    return this.http.get<Sach[]>(`${environment.apiUrl}/${this.url}/(search)?keyword=${keyword}`);
+  }
+
  
 }
